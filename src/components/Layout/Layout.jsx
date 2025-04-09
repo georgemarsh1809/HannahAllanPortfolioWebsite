@@ -9,22 +9,22 @@ export const Layout = () => {
                 <div className={styles.headerContainer}>
                     <nav className={styles.navContainerHeader}>
                         <NavLink to="/works" onClick={() => { }}>
-                            <button className='works-anchor-tag'>
+                            <button className={styles.navLinkButtonLeft}>
                                 <p>Works</p>
                             </button>
                         </NavLink>
-                        <h1 className={styles.headerTitle}>
+                        <a href="/" className={styles.headerTitle}>
                             hannah allan
-                        </h1>
+                        </a>
                         <NavLink to="/about" onClick={() => { }}>
-                            <button className='about-anchor-tag'>
+                            <button className={styles.navLinkButtonRight}>
                                 <p>About</p>
                             </button>
                         </NavLink>
                     </nav>
 
                 </div>
-            </header>
+            </header >
             <main>
                 <Outlet />
             </main>
@@ -32,13 +32,13 @@ export const Layout = () => {
                 <div className={styles.footerContainer}>
                     <nav className={styles.navContainerFooter}>
                         <a href="https://www.instagram.com/han_allan9/" target='_blank'>
-                            <button className='instagram-link'>
-                                <p>Instagram</p>
+                            <button className={styles.navLinkButtonLeft}>
+                                <p className={styles.navLinkText}>Instagram</p>
                             </button>
                         </a>
 
                         <NavLink to="/contact" onClick={() => { }}>
-                            <button className='contact-anchor-tag'>
+                            <button className={styles.navLinkButtonRight}>
                                 <p>Contact</p>
                             </button>
                         </NavLink>
