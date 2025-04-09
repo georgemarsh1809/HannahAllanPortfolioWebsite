@@ -1,0 +1,42 @@
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: solid 1px black;
+}
+
+.nav-container-header {
+    display: flex;
+    background-color: red;
+    height: 100px;
+    width: 100vw;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.header-title {
+    font-family: "Abril Fatface";
+    font-size: 80px;
+    font-weight: 600;
+}
+
+.footer-container {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    border: solid 1px black;
+}
+
+.nav-container-footer {
+    display: flex;
+    background-color: red;
+    height: 100px;
+    width: 100vw;
+    justify-content: space-between;
+    align-items: center;
+}
