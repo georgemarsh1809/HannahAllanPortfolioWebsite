@@ -1,0 +1,7 @@
+.landing-page-parent {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: solid 1px black; */
+}
