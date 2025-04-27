@@ -9,9 +9,16 @@ export function ProjectTile(props) {
     return (
         <div className={styles.projectTileContainer}>
             <NavLink to={`/works/${project}`} onClick={() => { }}>
-                <button className={styles.tileButton}>
-                    <img src={TenthPlanetIMAGES[imageNumber]} className={styles.image} />
-                </button>
+                <div className={styles.projectTileInfo}>
+                    {project}
+                </div>
+                <div>
+
+                    <button className={styles.tileButton}>
+                        <img src={TenthPlanetIMAGES[imageNumber]} className={styles.image} />
+                    </button>
+                </div>
+
             </NavLink>
         </div>
     )
