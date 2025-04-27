@@ -1,0 +1,12 @@
+.image {
+    height: 400px;
+    width: auto;
+    position: absolute;
+}
+
+.works-page-container {
+    display: flex;
+    min-width: 100vh;
+    flex-direction: column;
+    background-color: blue;
+}

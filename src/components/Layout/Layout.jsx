@@ -9,7 +9,7 @@ export const Layout = () => {
                 <div className={styles.headerContainer}>
                     <nav className={styles.navContainerHeader}>
                         <NavLink to="/works" onClick={() => { }}>
-                            <button className={styles.navLinkButtonLeft}>
+                            <button className={styles.navLinkButtonLeftTop}>
                                 <p>Works</p>
                             </button>
                         </NavLink>
@@ -17,12 +17,11 @@ export const Layout = () => {
                             hannah allan
                         </a>
                         <NavLink to="/about" onClick={() => { }}>
-                            <button className={styles.navLinkButtonRight}>
+                            <button className={styles.navLinkButtonRightTop}>
                                 <p>About</p>
                             </button>
                         </NavLink>
                     </nav>
-
                 </div>
             </header >
             <main>
@@ -32,13 +31,13 @@ export const Layout = () => {
                 <div className={styles.footerContainer}>
                     <nav className={styles.navContainerFooter}>
                         <a href="https://www.instagram.com/han_allan9/" target='_blank'>
-                            <button className={styles.navLinkButtonLeft}>
+                            <button className={styles.navLinkButtonLeftBottom}>
                                 <p className={styles.navLinkText}>Instagram</p>
                             </button>
                         </a>
 
                         <NavLink to="/contact" onClick={() => { }}>
-                            <button className={styles.navLinkButtonRight}>
+                            <button className={styles.navLinkButtonRightBottom}>
                                 <p>Contact</p>
                             </button>
                         </NavLink>
