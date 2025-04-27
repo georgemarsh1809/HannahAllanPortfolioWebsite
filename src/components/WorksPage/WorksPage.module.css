@@ -1,10 +1,8 @@
 .works-page-container {
     display: flex;
-    flex-direction: column;
-    width: 100dvw;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
     transform: 100px;
-    margin-left: 75px;
-    margin-right: 75px;
-    /* background-color: red; */
-    justify-content: space-between;
+    margin-top: 107px;
 }
