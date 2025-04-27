@@ -1,0 +1,26 @@
+.image {
+    height: 400px;
+    width: auto;
+}
+
+.tile-button {
+    border: none;
+    margin: 5px;
+    background-color: red;
+
+}
+
+.project-tile-container {
+    display: flex;
+    object-fit: cover;
+
+}
+
+.project-tile-container:hover {
+    cursor: pointer;
+
+}
+
+/* .tile-button:hover {
+
+} */
