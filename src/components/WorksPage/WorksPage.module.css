@@ -2,6 +2,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    padding-top: 40px;
     width: 100%;
     transform: 100px;
     margin-top: 107px;
