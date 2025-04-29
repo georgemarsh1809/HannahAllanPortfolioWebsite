@@ -9,27 +9,6 @@
 
 .tile-button {
     border: none;
-
-}
-
-.project-tile-container {
-    display: flex;
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    margin: 10px;
-    /* border: solid 2px black; */
-    height: fit-content;
-    max-width: fit-content;
-
-
-}
-
-.project-tile-container:hover {
-    cursor: pointer;
-
-
-
 }
 
 .project-tile-info {

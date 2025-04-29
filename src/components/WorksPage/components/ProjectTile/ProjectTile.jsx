@@ -19,19 +19,17 @@ export function ProjectTile(props) {
                 project === "MonsoonFN" ? MonsoonFNIMAGES[imageNumber] : ""
 
     return (
-        <div className={styles.projectTileContainer}>
-            <NavLink to={`/works/${project}`} onClick={() => { }}>
-                <div className={styles.projectTileInfo}>
-                    {projectTitle}
-                </div>
-                <div>
+        <NavLink to={`/works/${project}`} onClick={() => { }}>
+            <div className={styles.projectTileInfo}>
+                {projectTitle}
+            </div>
+            <div>
 
-                    <button className={styles.tileButton}>
-                        <img src={source} className={styles.image} />
-                    </button>
-                </div>
+                <button className={styles.tileButton}>
+                    <img src={source} className={styles.image} />
+                </button>
+            </div>
 
-            </NavLink>
-        </div>
+        </NavLink>
     )
 }
