@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from './ChrisChamillaProjectPage.module.css'
+import { ChrisChamillaIMAGES } from '../../WorksPage.constants'
 
 
 export const ChrisChamillaProjectPage = () => {

@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from './MonsoonFNProjectPage.module.css'
+import { MonsoonFNIMAGES } from '../../WorksPage.constants'
 
 export const MonsoonFNProjectPage = () => {
     return (

@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from './TenthPlanetProjectPage.module.css'
+import { TenthPlanetIMAGES } from '../../WorksPage.constants'
 
 export const TenthPlanetProjectPage = () => {
     return (

@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from './SacredSpacesProjectPage.module.css'
+import { SacredSpacesIMAGES } from '../../WorksPage.constants'
 
 
 export const SacredSpacesProjectPage = () => {

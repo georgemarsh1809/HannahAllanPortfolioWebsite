@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from './InnerChildLivingProjectPage.module.css'
+import { InnerChildIMAGES } from '../../WorksPage.constants'
 
 
 export const InnerChildLivingProjectPage = () => {
