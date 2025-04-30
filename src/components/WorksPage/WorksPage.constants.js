@@ -91,3 +91,21 @@ export const MonsoonFNIMAGES = [
     img57, img58, img59, img60, img61, img62, img63, img64,
     img65, img66, img67, img68, img69, img70, img71
 ]
+
+import img72 from '../../assets/Projects/SacredSpaces/coverImage.jpg'
+
+export const SacredSpacesIMAGES = [
+    img72
+]
+
+import img73 from '../../assets/Projects/Fractured/coverImage.jpg'
+
+export const FracturedIMAGES = [
+    img73
+]
+
+import img74 from '../../assets/Projects/Chris&Chamilla/coverImage.jpg'
+
+export const ChrisChamillaIMAGES = [
+    img74
+]

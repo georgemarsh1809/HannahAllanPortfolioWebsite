@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from './MonsoonFNProjectPage.module.css'
 
-export default function MonsoonFNProjectPage() {
+export const MonsoonFNProjectPage = () => {
     return (
         <>
             <div className={styles.projectContextContainer}>

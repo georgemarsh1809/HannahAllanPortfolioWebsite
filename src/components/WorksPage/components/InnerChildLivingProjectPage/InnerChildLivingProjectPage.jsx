@@ -2,7 +2,7 @@ import React from 'react'
 import styles from './InnerChildLivingProjectPage.module.css'
 
 
-export default function InnerChildLivingProjectPage() {
+export const InnerChildLivingProjectPage = () => {
     return (
         <>
             <div className={styles.projectContextContainer}>

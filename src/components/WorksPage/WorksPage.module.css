@@ -3,9 +3,9 @@
     flex-wrap: wrap;
     position: relative;
     width: 100%;
+    height: auto;
     margin-top: 107px;
-    margin-left: 50px;
-    margin-right: 50px;
+    padding-bottom: 200px;
 }
 
 
@@ -16,6 +16,7 @@
     align-items: center;
     height: fit-content;
     max-width: fit-content;
+    border: none;
 }
 
 .project-tile-container:hover {
@@ -25,17 +26,35 @@
 .project-tile-one {
     position: absolute;
     top: 50px;
-    left: 200px;
+    left: 280px;
 }
 
 .project-tile-two {
     position: absolute;
     top: 50px;
-    left: 550px;
+    left: 630px;
 }
 
 .project-tile-three {
     position: absolute;
     top: 550px;
-    left: 200px;
+    left: 280px;
+}
+
+.project-tile-four {
+    position: absolute;
+    top: 550px;
+    left: 960px;
+}
+
+.project-tile-five {
+    position: absolute;
+    top: 1050px;
+    left: 280px;
+}
+
+.project-tile-six {
+    position: absolute;
+    top: 1050px;
+    left: 630px;
 }

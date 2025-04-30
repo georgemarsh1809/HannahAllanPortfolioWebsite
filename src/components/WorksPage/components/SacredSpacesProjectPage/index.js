@@ -1,0 +1,1 @@
+export { SacredSpacesProjectPage } from "./SacredSpacesProjectPage";

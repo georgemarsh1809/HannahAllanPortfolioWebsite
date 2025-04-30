@@ -6,8 +6,11 @@ import { WorksPage } from './components/WorksPage';
 import { AboutPage } from './components/AboutPage';
 import { ContactPage } from './components/ContactPage';
 import { TenthPlanetProjectPage } from './components/WorksPage/components/TenthPlanetProjectPage';
-import InnerChildLivingProjectPage from './components/WorksPage/components/InnerChildLivingProjectPage/InnerChildLivingProjectPage';
-import MonsoonFNProjectPage from './components/WorksPage/components/MonsoonFNProjectPage/MonsoonFNProjectPage';
+import { InnerChildLivingProjectPage } from './components/WorksPage/components/InnerChildLivingProjectPage/InnerChildLivingProjectPage';
+import { MonsoonFNProjectPage } from './components/WorksPage/components/MonsoonFNProjectPage/MonsoonFNProjectPage';
+import { SacredSpacesProjectPage } from './components/WorksPage/components/SacredSpacesProjectPage';
+import { FracturedProjectPage } from './components/WorksPage/components/FracturedProjectPage';
+import { ChrisChamillaProjectPage } from './components/WorksPage/components/ChrisChamillaProjectPage';
 
 function App() {
 
@@ -21,6 +24,9 @@ function App() {
             <Route path="works/TenthPlanet" element={<TenthPlanetProjectPage />} />
             <Route path="works/InnerChildLiving" element={<InnerChildLivingProjectPage />} />
             <Route path="works/MonsoonFN" element={<MonsoonFNProjectPage />} />
+            <Route path="works/SacredSpaces" element={<SacredSpacesProjectPage />} />
+            <Route path="works/Fractured" element={<FracturedProjectPage />} />
+            <Route path="works/Chris&Chamilla" element={<ChrisChamillaProjectPage />} />
             <Route path="about" element={<AboutPage />} />
             <Route path="contact" element={<ContactPage />} />
           </Route>
