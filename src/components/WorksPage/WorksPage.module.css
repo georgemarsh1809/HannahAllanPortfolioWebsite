@@ -1,60 +1,90 @@
 .works-page-container {
     display: flex;
-    flex-wrap: wrap;
-    position: relative;
+    flex-direction: column;
+    max-width: 1000px;
     width: 100%;
-    height: auto;
+    padding: 10px;
     margin-top: 107px;
-    padding-bottom: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 200px;
+    /* background-color: red; */
 }
 
-
-.project-tile-container {
+.works-page-row-container {
     display: flex;
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    height: fit-content;
-    max-width: fit-content;
-    border: none;
+    flex-direction: row;
+    /* justify-content: space-between; */
+    width: 100%;
+    /* background-color: blue; */
 }
 
-.project-tile-container:hover {
-    cursor: pointer;
+.works-page-row-container:nth-child(1) {
+    padding: 1% 5%;
+}
+
+.works-page-row-container:nth-child(2) {
+    padding: 10%;
+    padding-left: 5%;
 }
 
 .project-tile-one {
-    position: absolute;
-    top: 50px;
-    left: 280px;
+    position: relative;
+    border: none;
+    width: 50%;
+    max-width: 300px;
+    height: fit-content;
 }
 
 .project-tile-two {
-    position: absolute;
-    top: 50px;
-    left: 630px;
+    position: relative;
+    /* right: 10%; */
+    left: 10%;
+    top: -100px;
+    margin-top: auto;
+    /* needs to be changed to be responsive */
+    width: 45%;
+    height: fit-content;
+    max-width: 500px;
 }
 
 .project-tile-three {
-    position: absolute;
-    top: 550px;
-    left: 280px;
+    position: relative;
+    height: fit-content;
+    /* left: 30%; */
+    width: 50%;
+    top: -60px;
+    left: -5%;
+    margin-top: auto;
+    max-width: 600px;
 }
 
 .project-tile-four {
-    position: absolute;
-    top: 550px;
-    left: 960px;
+    position: relative;
+    height: fit-content;
+    width: 50%;
+    max-width: 280px;
+    top: -120px;
+    left: 5%;
+    margin-top: auto;
 }
 
 .project-tile-five {
-    position: absolute;
-    top: 1050px;
-    left: 280px;
+    position: relative;
+    /* right: 10%; */
+    left: 2%;
+    top: -100px;
+    margin-top: auto;
+    max-width: 320px;
 }
 
 .project-tile-six {
-    position: absolute;
-    top: 1050px;
-    left: 630px;
+    position: relative;
+    height: fit-content;
+    position: relative;
+    /* right: 10%; */
+    left: 10%;
+    top: -80px;
+    margin-top: auto;
+    max-width: 390px;
 }

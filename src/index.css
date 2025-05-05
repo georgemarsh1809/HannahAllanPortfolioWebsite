@@ -33,7 +33,7 @@ header {
   top: 0;
   position: sticky;
   flex-direction: column;
-  min-width: 100vh;
+  min-width: 100vw;
   width: 100vw;
   z-index: 10;
 }
