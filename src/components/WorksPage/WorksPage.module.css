@@ -14,7 +14,6 @@
 .works-page-row-container {
     display: flex;
     flex-direction: row;
-    /* justify-content: space-between; */
     width: 100%;
     /* background-color: blue; */
 }

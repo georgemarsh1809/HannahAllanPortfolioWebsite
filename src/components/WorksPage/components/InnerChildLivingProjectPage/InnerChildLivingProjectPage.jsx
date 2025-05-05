@@ -32,6 +32,88 @@ export const InnerChildLivingProjectPage = () => {
             </div>
 
             <div className={styles.imagesContainer}>
+                <div className={styles.imagesRowContainer}>
+                    <div className={styles.imageOneContainer}>
+                        <img src={InnerChildIMAGES[0]} className={styles.image} />
+                    </div>
+                </div>
+                <div className={styles.imagesRowContainer} >
+                    <div className={styles.imageTwoContainer}>
+                        <img src={InnerChildIMAGES[3]} className={styles.image} />
+                    </div>
+                </div>
+                <div className={styles.imagesRowContainer} >
+                    <div className={styles.imageThreeContainer}>
+                        <img src={InnerChildIMAGES[8]} className={styles.image} />
+                    </div>
+                </div>
+                <div className={styles.imagesRowContainer} >
+                    <div className={styles.imageFourContainer}>
+                        <img src={InnerChildIMAGES[6]} className={styles.image} />
+                    </div>
+                </div>
+                <div className={styles.imagesRowContainer} >
+                    <div className={styles.imageFiveContainer}>
+                        <img src={InnerChildIMAGES[11]} className={styles.image} />
+                    </div>
+                </div>
+                <div className={styles.imagesRowContainer} >
+                    <div className={styles.imageSixContainer}>
+                        <img src={InnerChildIMAGES[1]} className={styles.image} />
+                    </div>
+                </div>
+                <div className={styles.imagesRowContainer} >
+                    <div className={styles.imageSevenContainer}>
+                        <img src={InnerChildIMAGES[5]} className={styles.image} />
+                    </div>
+                </div>
+                <div className={styles.imagesRowContainer} >
+                    <div className={styles.imageEightContainer}>
+                        <img src={InnerChildIMAGES[4]} className={styles.image} />
+                    </div>
+                </div>
+                <div className={styles.imagesRowContainer} >
+                    <div className={styles.imageNineContainer}>
+                        <img src={InnerChildIMAGES[12]} className={styles.image} />
+                    </div>
+                    <div className={styles.imageTenContainer}>
+                        <img src={InnerChildIMAGES[13]} className={styles.image} />
+                    </div>
+                </div>
+                <div className={styles.imagesRowContainer} >
+                    <div className={styles.imageElevenContainer}>
+                        <img src={InnerChildIMAGES[7]} className={styles.image} />
+                    </div>
+                    <div className={styles.imageTwelveContainer}>
+                        <img src={InnerChildIMAGES[9]} className={styles.image} />
+                    </div>
+                </div>
+                <div className={styles.imagesRowContainer} >
+                    <div className={styles.imageThirteenContainer}>
+                        <img src={InnerChildIMAGES[14]} className={styles.image} />
+                    </div>
+                </div>
+                <div className={styles.imagesRowContainer} >
+                    <div className={styles.imageFourteenContainer}>
+                        <img src={InnerChildIMAGES[2]} className={styles.image} />
+                    </div>
+                    <div className={styles.imageFifteenContainer}>
+                        <img src={InnerChildIMAGES[5]} className={styles.image} />
+                    </div>
+                </div>
+                <div className={styles.imagesRowContainer} >
+                    <div className={styles.imageSixteenContainer}>
+                        <img src={InnerChildIMAGES[10]} className={styles.image} />
+                    </div>
+                </div>
+                <div className={styles.imagesRowContainer} >
+                    <div className={styles.imageSeventeenContainer}>
+                        <img src={InnerChildIMAGES[15]} className={styles.image} />
+                    </div>
+                    <div className={styles.imageEighteenContainer}>
+                        <img src={InnerChildIMAGES[16]} className={styles.image} />
+                    </div>
+                </div>
 
             </div>
         </>

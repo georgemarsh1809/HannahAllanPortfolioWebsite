@@ -1,8 +1,10 @@
 .project-context-container {
     display: flex;
-    margin-top: 200px;
-    margin-left: 200px;
-    margin-right: 200px;
+    max-width: 1000px;
+    margin-top: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    /* background-color: red; */
 }
 
 .context-body {
@@ -23,4 +25,170 @@
     justify-content: center;
     padding: 10px;
     width: 50%;
+}
+
+.images-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 1100px;
+    width: 100%;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 200px;
+    margin-top: 50px;
+    /* background-color: red; */
+}
+
+.images-row-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    /* background-color: blue; */
+    /* border: solid 2px black; */
+}
+
+.image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.image-one-container {
+    max-width: 800px;
+    height: auto;
+}
+
+.image-two-container {
+    position: relative;
+    margin-top: 10%;
+    max-width: 400px;
+    height: auto;
+    left: 50%;
+}
+
+.image-three-container {
+    position: relative;
+    max-width: 600px;
+    height: auto;
+    left: -5%;
+}
+
+.image-four-container {
+    position: relative;
+    max-width: 300px;
+    height: auto;
+    margin-top: 10%;
+    left: 45%
+}
+
+.image-five-container {
+    position: relative;
+    max-width: 500px;
+    height: auto;
+    margin-top: 8%;
+}
+
+.image-six-container {
+    position: relative;
+    max-width: 600px;
+    height: auto;
+    margin-top: 15%;
+    left: 25%
+}
+
+.image-seven-container {
+    position: relative;
+    max-width: 350px;
+    height: auto;
+    left: 5%
+}
+
+.image-eight-container {
+    position: relative;
+    max-width: 550px;
+    height: auto;
+    left: 45%;
+    top: -30px
+}
+
+.image-nine-container {
+    position: relative;
+    margin-top: 10%;
+    max-width: 450px;
+    height: auto;
+    left: 5%;
+}
+
+.image-ten-container {
+    position: relative;
+    margin-top: 30%;
+    max-width: 400px;
+    height: auto;
+    left: 12%;
+}
+
+.image-eleven-container {
+    position: relative;
+    margin-top: 65%;
+    max-width: 450px;
+    height: auto;
+    left: 5%;
+}
+
+.image-twelve-container {
+    position: relative;
+    margin-top: 30%;
+    max-width: 400px;
+    height: auto;
+    left: 18%;
+}
+
+.image-thirteen-container {
+    position: relative;
+    margin-top: 10%;
+    max-width: 1000px;
+    height: auto;
+    left: 4%;
+}
+
+.image-fourteen-container {
+    position: relative;
+    margin-top: 20%;
+    max-width: 450px;
+    height: auto;
+    left: 56%
+}
+
+.image-fifteen-container {
+    position: relative;
+    margin-top: 55%;
+    left: -30%;
+    max-width: 370px;
+    height: auto;
+}
+
+.image-sixteen-container {
+    position: relative;
+    margin-top: 20%;
+    left: 23%;
+    max-width: 580px;
+    height: auto;
+}
+
+.image-seventeen-container {
+    position: relative;
+    margin-top: 20%;
+    left: 10%;
+    max-width: 550px;
+    height: auto;
+}
+
+.image-eighteen-container {
+    position: relative;
+    margin-top: 85%;
+    left: 9%;
+    max-width: 350px;
+    height: auto;
 }
