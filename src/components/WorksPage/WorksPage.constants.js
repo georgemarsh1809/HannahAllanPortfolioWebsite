@@ -1,5 +1,5 @@
 import img1 from '../../assets/Projects/10thPlanet/10thplanet2025-0001.jpg'
-import img2 from './../../assets/Projects/10thPlanet/10thplanet2025-0008.jpg'
+import img2 from '../../assets/Projects/10thPlanet/10thplanet2025-0008.jpg'
 import img3 from './../../assets/Projects/10thPlanet/10thplanet2025-0011.jpg'
 import img4 from './../../assets/Projects/10thPlanet/10thplanet2025-0013.jpg'
 import img6 from './../../assets/Projects/10thPlanet/10thplanet2025-0023.jpg'
