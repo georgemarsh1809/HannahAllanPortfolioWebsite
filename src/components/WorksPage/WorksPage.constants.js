@@ -21,12 +21,15 @@ import img20 from './../../assets/Projects/10thPlanet/DSC03463bw.jpg'
 import img21 from './../../assets/Projects/10thPlanet/DSC07168bw.jpg'
 import img22 from './../../assets/Projects/10thPlanet/DSC07287bw.jpg'
 import img23 from './../../assets/Projects/10thPlanet/DSC07581.jpg'
+import extra1 from './../../assets/Projects/10thPlanet/DSC03607.jpg'
+import extra2 from './../../assets/Projects/10thPlanet/DSC03627.jpg'
+import extra3 from './../../assets/Projects/10thPlanet/DSC03537.jpg'
 
 
 export const TenthPlanetIMAGES = [
     img1, img2, img3, img4, img5, img6, img7, img8, img9, img10,
     img11, img12, img13, img14, img15, img16, img17, img18, img19, img20,
-    img21, img22, img23
+    img21, img22, img23, extra1, extra2, extra3
 ]
 
 import img24 from './../../assets/Projects/InnerChildLiving/DSC01809.jpg'
@@ -99,7 +102,7 @@ import img75 from '../../assets/Projects/Fractured/002.jpg'
 import img76 from '../../assets/Projects/Fractured/003.jpg'
 import img77 from '../../assets/Projects/Fractured/004.jpg'
 import img78 from '../../assets/Projects/Fractured/005.jpg'
-import img79 from '../../assets/Projects/Fractured/006.jpg'
+import img79 from '../../assets/Projects/Fractured/006_milford on sea, concrete wall, b+w.jpg'
 import img80 from '../../assets/Projects/Fractured/007.jpg'
 import img81 from '../../assets/Projects/Fractured/008.jpg'
 import img82 from '../../assets/Projects/Fractured/009.jpg'

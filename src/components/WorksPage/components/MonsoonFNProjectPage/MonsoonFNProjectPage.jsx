@@ -19,7 +19,16 @@ export const MonsoonFNProjectPage = () => {
             </div>
 
             <div className={styles.imagesContainer}>
-
+                <div className={styles.imagesRowContainer}>
+                    <div className={styles.imageOneContainer}>
+                        <img src={MonsoonFNIMAGES[0]} className={styles.image} />
+                    </div>
+                </div>
+                <div className={styles.imagesRowContainer} >
+                    <div className={styles.imageTwoContainer}>
+                        <img src={MonsoonFNIMAGES[3]} className={styles.image} />
+                    </div>
+                </div>
             </div>
         </>
     )

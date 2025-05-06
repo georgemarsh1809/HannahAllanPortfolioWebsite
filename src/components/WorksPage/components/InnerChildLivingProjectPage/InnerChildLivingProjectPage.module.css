@@ -56,6 +56,8 @@
 }
 
 .image-one-container {
+    position: relative;
+    width: 74%;
     max-width: 800px;
     height: auto;
 }
@@ -63,6 +65,7 @@
 .image-two-container {
     position: relative;
     margin-top: 10%;
+    width: 37%;
     max-width: 400px;
     height: auto;
     left: 50%;
@@ -70,6 +73,7 @@
 
 .image-three-container {
     position: relative;
+    width: 55.5%;
     max-width: 600px;
     height: auto;
 }
@@ -77,6 +81,7 @@
 .image-four-container {
     position: relative;
     max-width: 300px;
+    width: 27.75%;
     height: auto;
     margin-top: 10%;
     left: 45%
@@ -85,6 +90,7 @@
 .image-five-container {
     position: relative;
     max-width: 500px;
+    width: 46.25%;
     height: auto;
     margin-top: 8%;
 }
@@ -92,6 +98,7 @@
 .image-six-container {
     position: relative;
     max-width: 600px;
+    width: 55.5%;
     height: auto;
     margin-top: 15%;
     left: 25%
@@ -100,6 +107,7 @@
 .image-seven-container {
     position: relative;
     max-width: 350px;
+    width: 32.375%;
     height: auto;
     left: 5%
 }
@@ -107,6 +115,7 @@
 .image-eight-container {
     position: relative;
     max-width: 550px;
+    width: 50.875%;
     height: auto;
     left: 45%;
     top: -30px
@@ -115,6 +124,7 @@
 .image-nine-container {
     position: relative;
     margin-top: 10%;
+    width: 41.625%;
     max-width: 450px;
     height: auto;
     left: 5%;
@@ -123,6 +133,7 @@
 .image-ten-container {
     position: relative;
     margin-top: 30%;
+    width: 37%;
     max-width: 400px;
     height: auto;
     left: 12%;
@@ -132,6 +143,7 @@
     position: relative;
     margin-top: 65%;
     max-width: 450px;
+    width: 41.625%;
     height: auto;
     left: 5%;
 }
@@ -139,6 +151,7 @@
 .image-twelve-container {
     position: relative;
     margin-top: 30%;
+    width: 37%;
     max-width: 400px;
     height: auto;
     left: 18%;
@@ -148,6 +161,7 @@
     position: relative;
     margin-top: 10%;
     max-width: 1000px;
+    width: 92.5%;
     height: auto;
     left: 4%;
 }
@@ -156,6 +170,7 @@
     position: relative;
     margin-top: 20%;
     max-width: 450px;
+    width: 41.625%;
     height: auto;
     left: 56%
 }
@@ -164,6 +179,7 @@
     position: relative;
     margin-top: 55%;
     left: -30%;
+    width: 34.225%;
     max-width: 370px;
     height: auto;
 }
@@ -173,6 +189,7 @@
     margin-top: 20%;
     left: 23%;
     max-width: 580px;
+    width: 53.65%;
     height: auto;
 }
 
@@ -181,6 +198,7 @@
     margin-top: 20%;
     left: 10%;
     max-width: 550px;
+    width: 50.875%;
     height: auto;
 }
 
@@ -189,5 +207,6 @@
     margin-top: 85%;
     left: 9%;
     max-width: 350px;
+    width: 32.375%;
     height: auto;
 }
