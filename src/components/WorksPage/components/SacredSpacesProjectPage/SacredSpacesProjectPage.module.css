@@ -1,8 +1,9 @@
 .project-context-container {
     display: flex;
-    margin-top: 200px;
-    margin-left: 200px;
-    margin-right: 200px;
+    max-width: 1100px;
+    margin-top: 150px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .context-body {
@@ -23,4 +24,255 @@
     justify-content: center;
     padding: 10px;
     width: 50%;
+}
+
+.images-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 1100px;
+    width: 100%;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 200px;
+    margin-top: 50px;
+    /* border: solid 1px red; */
+}
+
+.images-row-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    /* background-color: blue; */
+    /* border: solid 2px black; */
+}
+
+.image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.image-one-container {
+    position: relative;
+    /* width: 74%; */
+    max-width: 750px;
+    height: auto;
+}
+
+.image-two-container {
+    position: relative;
+    margin-top: 12%;
+    /* width: 40.9%; */
+    max-width: 610px;
+    height: auto;
+    left: 44%;
+}
+
+.image-three-container {
+    position: relative;
+    margin-top: 3%;
+    /* width: 54%; */
+    max-width: 600px;
+    height: auto;
+    left: 3%;
+}
+
+.image-four-container {
+    position: relative;
+    margin-top: 10%;
+    /* width: 54%; */
+    max-width: 970px;
+    height: auto;
+    left: -2%;
+}
+
+.image-five-container {
+    position: relative;
+    margin-top: 2.5%;
+    /* width: 45.45%; */
+    max-width: 540px;
+    height: auto;
+    left: 55%;
+}
+
+.image-six-container {
+    position: relative;
+    /* width: 78%; */
+    margin-top: -15%;
+    max-width: 550px;
+    height: auto;
+    left: 1%;
+}
+
+.image-seven-container {
+    position: relative;
+    /* width: 50%; */
+    margin-top: 6%;
+    max-width: 950px;
+    height: auto;
+    left: 21%;
+}
+
+.image-eight-container {
+    position: relative;
+    /* width: 50%; */
+    margin-top: 10%;
+    max-width: 820px;
+    height: auto;
+    left: 1%;
+}
+
+.image-nine-container {
+    position: relative;
+    /* width: 96%; */
+    margin-top: 8%;
+    max-width: 480px;
+    height: auto;
+    left: 34%;
+}
+
+.image-ten-container {
+    position: relative;
+    /* width: 60%; */
+    margin-top: 10%;
+    max-width: 620px;
+    height: auto;
+    left: 1%;
+}
+
+.image-eleven-container {
+    position: relative;
+    /* width: 56%; */
+    margin-top: 8%;
+    max-width: 800px;
+    height: auto;
+    left: 30%;
+}
+
+.image-twelve-container {
+    position: relative;
+    /* width: 71%; */
+    margin-top: 10%;
+    max-width: 770px;
+    height: auto;
+    left: 4%;
+}
+
+.image-thirteen-container {
+    position: relative;
+    /* width: 51%; */
+    margin-top: 40%;
+    max-width: 550px;
+    height: auto;
+    left: -1%;
+}
+
+.image-fourteen-container {
+    position: relative;
+    margin-top: 5%;
+    /* width: 68%; */
+    max-width: 740px;
+    height: auto;
+    left: 2%;
+}
+
+.image-fifteen-container {
+    position: relative;
+    /* width: 42%; */
+    margin-top: 10%;
+    max-width: 500px;
+    height: auto;
+    left: 47%;
+}
+
+.image-sixteen-container {
+    position: relative;
+    /* width: 73%; */
+    margin-top: 2%;
+    max-width: 570px;
+    height: auto;
+    left: 0%;
+}
+
+.image-seventeen-container {
+    position: relative;
+    /* width: 43%; */
+    margin-top: 7%;
+    max-width: 890px;
+    height: auto;
+    left: 19%;
+}
+
+.image-eighteen-container {
+    position: relative;
+    /* width: 53%; */
+    margin-top: 7%;
+    max-width: 410px;
+    height: auto;
+    left: 1%;
+}
+
+.image-nineteen-container {
+    position: relative;
+    /* width: 46%; */
+    margin-top: 8%;
+    max-width: 680px;
+    height: auto;
+    left: 34%;
+}
+
+.image-twenty-container {
+    position: relative;
+    /* width: 51%; */
+    margin-top: 2%;
+    max-width: 650px;
+    height: auto;
+    left: 4%;
+}
+
+.image-twenty-one-container {
+    position: relative;
+    /* width: 44%; */
+    margin-top: 8%;
+    max-width: 480px;
+    height: auto;
+    left: 50%;
+}
+
+.image-twenty-two-container {
+    position: relative;
+    /* width: 60%; */
+    margin-top: 3%;
+    max-width: 650px;
+    height: auto;
+    left: 35%;
+}
+
+.image-twenty-three-container {
+    position: relative;
+    width: 60%;
+    margin-top: 2%;
+    max-width: 650px;
+    height: auto;
+    left: 3%;
+}
+
+.image-twenty-four-container {
+    position: relative;
+    /* width: 64%; */
+    margin-top: 10%;
+    max-width: 500px;
+    height: auto;
+    left: 50%;
+}
+
+.image-twenty-five-container {
+    position: relative;
+    /* width: 55%; */
+    margin-top: 12%;
+    max-width: 900px;
+    height: auto;
+    left: 8%;
 }

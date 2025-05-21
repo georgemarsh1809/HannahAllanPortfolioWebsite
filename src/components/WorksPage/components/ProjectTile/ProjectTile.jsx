@@ -1,23 +1,16 @@
-import React from 'react'
 import styles from './ProjectTile.module.css'
-import { TenthPlanetIMAGES } from './../../WorksPage.constants'
-import { InnerChildIMAGES } from './../../WorksPage.constants'
-import { MonsoonFNIMAGES } from './../../WorksPage.constants'
-import { SacredSpacesIMAGES } from './../../WorksPage.constants'
-import { FracturedIMAGES } from './../../WorksPage.constants'
-import { ChrisChamillaIMAGES } from './../../WorksPage.constants'
 import { NavLink } from 'react-router'
 
 export function ProjectTile(props) {
-    const { imageNumber, project } = props
+    const { project } = props
 
     const source =
-        project === "TenthPlanet" ? TenthPlanetIMAGES[imageNumber] :
-            project === "InnerChildLiving" ? InnerChildIMAGES[imageNumber] :
-                project === "MonsoonFN" ? MonsoonFNIMAGES[imageNumber] :
-                    project === "SacredSpaces" ? SacredSpacesIMAGES[imageNumber] :
-                        project === "Fractured" ? FracturedIMAGES[imageNumber] :
-                            project === "Chris&Chamilla" ? ChrisChamillaIMAGES[imageNumber] : ""
+        project === "TenthPlanet" ? '/Projects/10thPlanet/10thplanet2025-0013.jpg' :
+            project === "InnerChildLiving" ? '/Projects/InnerChildLiving/DSC01865.jpg' :
+                project === "MonsoonFN" ? '/Projects/Monsoon Gym Fight Night/016.jpg' :
+                    project === "SacredSpaces" ? '/Projects/SacredSpaces/coverImage.jpg' :
+                        project === "Fractured" ? '/Projects/Fractured/013.jpg' :
+                            project === "Chris&Chamilla" ? '/Projects/Chris&Chamilla/024.jpg' : ""
 
     return (
         <NavLink to={`/works/${project}`} onClick={() => { }}>

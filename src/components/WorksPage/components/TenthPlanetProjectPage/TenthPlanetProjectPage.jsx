@@ -1,6 +1,5 @@
 import React from 'react'
 import styles from './TenthPlanetProjectPage.module.css'
-import { TenthPlanetIMAGES } from '../../WorksPage.constants'
 
 export const TenthPlanetProjectPage = () => {
     return (
@@ -35,111 +34,111 @@ export const TenthPlanetProjectPage = () => {
             <div className={styles.imagesContainer}>
                 <div className={styles.imagesRowContainer}>
                     <div className={styles.imageOneContainer}>
-                        <img src={TenthPlanetIMAGES[23]} className={styles.image} />
+                        <img src={'/Projects/10thPlanet/DSC03607.jpg'} className={styles.image} />
                     </div>
                 </div>
                 <div className={styles.imagesRowContainer} >
                     <div className={styles.imageTwoContainer}>
-                        <img src={TenthPlanetIMAGES[19]} className={styles.image} />
+                        <img src={'/Projects/10thPlanet/DSC03463bw.jpg'} className={styles.image} />
                     </div>
                 </div>
                 <div className={styles.imagesRowContainer} >
                     <div className={styles.imageThreeContainer}>
-                        <img src={TenthPlanetIMAGES[0]} className={styles.image} />
+                        <img src={'/Projects/10thPlanet/10thplanet2025-0001.jpg'} className={styles.image} />
                     </div>
                 </div>
                 <div className={styles.imagesRowContainer} >
                     <div className={styles.imageFourContainer}>
-                        <img src={TenthPlanetIMAGES[1]} className={styles.image} />
+                        <img src={'/Projects/10thPlanet/DSC03463bw.jpg'} className={styles.image} />
                     </div>
                 </div>
                 <div className={styles.imagesRowContainer} >
                     <div className={styles.imageFiveContainer}>
-                        <img src={TenthPlanetIMAGES[6]} className={styles.image} />
+                        <img src={'/Projects/10thPlanet/10thplanet2025-0045.jpg'} className={styles.image} />
                     </div>
                 </div>
                 <div className={styles.imagesRowContainer} >
                     <div className={styles.imageSixContainer}>
-                        <img src={TenthPlanetIMAGES[7]} className={styles.image} />
+                        <img src={'/Projects/10thPlanet/10thplanet2025-0050.jpg'} className={styles.image} />
                     </div>
                 </div>
                 <div className={styles.imagesRowContainer} >
                     <div className={styles.imageSevenContainer}>
-                        <img src={TenthPlanetIMAGES[8]} className={styles.image} />
+                        <img src={'/Projects/10thPlanet/10thplanetfeb2025-0003.jpg'} className={styles.image} />
                     </div>
                 </div>
                 <div className={styles.imagesRowContainer} >
                     <div className={styles.imageEightContainer}>
-                        <img src={TenthPlanetIMAGES[12]} className={styles.image} />
+                        <img src={'/Projects/10thPlanet/10thplanetfeb2025-0045.jpg'} className={styles.image} />
                     </div>
                     <div className={styles.imageNineContainer}>
-                        <img src={TenthPlanetIMAGES[24]} className={styles.image} />
+                        <img src={'/Projects/10thPlanet/DSC03627.jpg'} className={styles.image} />
                     </div>
                 </div>
                 <div className={styles.imagesRowContainer} >
                     <div className={styles.imageTenContainer}>
-                        <img src={TenthPlanetIMAGES[14]} className={styles.image} />
+                        <img src={'/Projects/10thPlanet/10thplanetfeb2025-0061.jpg'} className={styles.image} />
                     </div>
                 </div>
                 <div className={styles.imagesRowContainer} >
                     <div className={styles.imageElevenContainer}>
-                        <img src={TenthPlanetIMAGES[13]} className={styles.image} />
+                        <img src={'/Projects/10thPlanet/10thplanetfeb2025-0055.jpg'} className={styles.image} />
                     </div>
                 </div>
                 <div className={styles.imagesRowContainer} >
                     <div className={styles.imageTwelveContainer}>
-                        <img src={TenthPlanetIMAGES[15]} className={styles.image} />
+                        <img src={'/Projects/10thPlanet/10thplanetfeb2025-0064.jpg'} className={styles.image} />
                     </div>
                     <div className={styles.imageThirteenContainer}>
-                        <img src={TenthPlanetIMAGES[9]} className={styles.image} />
+                        <img src={'/Projects/10thPlanet/10thplanetfeb2025-0012.jpg'} className={styles.image} />
                     </div>
                 </div>
                 <div className={styles.imagesRowContainer} >
                     <div className={styles.imageFourteenContainer}>
-                        <img src={TenthPlanetIMAGES[5]} className={styles.image} />
+                        <img src={'/Projects/10thPlanet/10thplanet2025-0023.jpg'} className={styles.image} />
                     </div>
                 </div>
                 <div className={styles.imagesRowContainer} >
                     <div className={styles.imageFifteenContainer}>
-                        <img src={TenthPlanetIMAGES[4]} className={styles.image} />
+                        <img src={'/Projects/10thPlanet/10thplanet2025-0028.jpg'} className={styles.image} />
                     </div>
                 </div>
                 <div className={styles.imagesRowContainer} >
                     <div className={styles.imageSixteenContainer}>
-                        <img src={TenthPlanetIMAGES[11]} className={styles.image} />
+                        <img src={'/Projects/10thPlanet/10thplanetfeb2025-0043.jpg'} className={styles.image} />
                     </div>
                 </div>
                 <div className={styles.imagesRowContainer} >
                     <div className={styles.imageSeventeenContainer}>
-                        <img src={TenthPlanetIMAGES[17]} className={styles.image} />
+                        <img src={'/Projects/10thPlanet/10thplanetfeb2025-0072.jpg'} className={styles.image} />
                     </div>
                 </div>
                 <div className={styles.imagesRowContainer} >
                     <div className={styles.imageEighteenContainer}>
-                        <img src={TenthPlanetIMAGES[3]} className={styles.image} />
+                        <img src={'/Projects/10thPlanet/10thplanet2025-0013.jpg'} className={styles.image} />
                     </div>
                 </div>
                 <div className={styles.imagesRowContainer} >
                     <div className={styles.imageNineteenContainer}>
-                        <img src={TenthPlanetIMAGES[20]} className={styles.image} />
+                        <img src={'/Projects/10thPlanet/DSC07168bw.jpg'} className={styles.image} />
                     </div>
                 </div>
                 <div className={styles.imagesRowContainer} >
                     <div className={styles.imageTwentyContainer}>
-                        <img src={TenthPlanetIMAGES[25]} className={styles.image} />
+                        <img src={'/Projects/10thPlanet/DSC03537.jpg'} className={styles.image} />
                     </div>
                 </div>
                 <div className={styles.imagesRowContainer} >
                     <div className={styles.imageTwentyOneContainer}>
-                        <img src={TenthPlanetIMAGES[16]} className={styles.image} />
+                        <img src={'/Projects/10thPlanet/10thplanetfeb2025-0067.jpg'} className={styles.image} />
                     </div>
                     <div className={styles.imageTwentyTwoContainer}>
-                        <img src={TenthPlanetIMAGES[22]} className={styles.image} />
+                        <img src={'/Projects/10thPlanet/DSC07581.jpg'} className={styles.image} />
                     </div>
                 </div>
                 <div className={styles.imagesRowContainer} >
                     <div className={styles.imageTwentyThreeContainer}>
-                        <img src={TenthPlanetIMAGES[21]} className={styles.image} />
+                        <img src={'/Projects/10thPlanet/DSC07287bw.jpg'} className={styles.image} />
                     </div>
                 </div>
 
