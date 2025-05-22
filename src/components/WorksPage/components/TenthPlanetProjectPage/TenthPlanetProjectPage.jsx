@@ -1,4 +1,3 @@
-import React from 'react'
 import styles from './TenthPlanetProjectPage.module.css'
 
 export const TenthPlanetProjectPage = () => {

@@ -1,4 +1,3 @@
-import React from 'react'
 import { ProjectTile } from './components/ProjectTile'
 import styles from './WorksPage.module.css'
 
@@ -15,7 +14,6 @@ export const WorksPage = () => {
                 </div>
             </div>
             <div className={styles.worksPageRowContainer}>
-
                 <div className={styles.projectTileThree}>
                     <ProjectTile imageNumber={15} project={"MonsoonFN"}></ProjectTile>
                 </div>

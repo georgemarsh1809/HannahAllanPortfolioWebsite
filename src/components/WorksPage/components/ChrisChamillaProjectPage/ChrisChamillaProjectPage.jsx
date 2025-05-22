@@ -1,6 +1,5 @@
 import styles from './ChrisChamillaProjectPage.module.css'
 
-
 export const ChrisChamillaProjectPage = () => {
     return (
         <>
@@ -14,7 +13,6 @@ export const ChrisChamillaProjectPage = () => {
                     <p>
                         Photographing a wedding is always special but never more so than when it is for people you love.
                     </p>
-
                     <p>
                         Chris has been a close friend since primary school, so when he and the beautiful Camilla asked me to photograph their special day, I jumped at the opportunity to honor their union in this way.
                     </p>

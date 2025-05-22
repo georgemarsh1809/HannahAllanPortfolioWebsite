@@ -1,13 +1,12 @@
-import React from 'react'
 import styles from './AboutPage.module.css'
-import placeholder from './../../assets/AboutPage/placeholder.png'
+import placeholder from '/AboutPage/placeholder.png'
 
 export const AboutPage = () => {
     return (
         <div className={styles.aboutPageContainer}>
             <div className={styles.titleContainer}>
                 About
-                <img src={placeholder} className={styles.headshotImage} />
+                <img src={placeholder} className={styles.headshotImage} loading='lazy' />
             </div>
             <div className={styles.textContainer}>
                 <p>I'm a photographer and storyteller originally from the south coast of the UK, now based in South East Asia.

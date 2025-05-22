@@ -1,6 +1,5 @@
-import React, { useState, useEffect } from 'react'
+import { useState, useEffect } from 'react'
 import styles from './Slider.module.css'
-// import ImageSlider, { Slide } from 'react-auto-image-slider'
 
 
 export const Slider = ({ imageUrls }) => {

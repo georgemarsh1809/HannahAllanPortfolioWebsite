@@ -1,4 +1,3 @@
-import React from 'react'
 import { Outlet, NavLink } from 'react-router'
 import styles from "./Layout.module.css"
 
@@ -36,7 +35,6 @@ export const Layout = () => {
                                 <p className={styles.navLinkText}>Instagram</p>
                             </button>
                         </a>
-
                         <NavLink to="/contact" onClick={() => { }}>
                             <button className={styles.navLinkButtonRightBottom}>
                                 <p>Contact</p>
