@@ -1,6 +1,4 @@
-import React from 'react'
 import styles from './SacredSpacesProjectPage.module.css'
-
 
 export const SacredSpacesProjectPage = () => {
     return (
