@@ -21,6 +21,7 @@ body {
   display: flex;
   min-width: 100dvw;
   height: 100dvh;
+  line-height: 140%;
 }
 
 /* 

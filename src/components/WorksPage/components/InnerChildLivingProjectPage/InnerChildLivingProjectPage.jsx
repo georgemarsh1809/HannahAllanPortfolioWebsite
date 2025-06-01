@@ -35,9 +35,13 @@ export const InnerChildLivingProjectPage = () => {
                     </div>
                 </div>
                 <div className={styles.imagesRowContainer} >
-                    <div className={styles.imageTwoContainer}>
-                        <img src={'/Projects/InnerChildLiving/DSC01911.jpg'} className={styles.image} />
-                    </div>
+                    <button className={styles.imageTwoContainer} onClick={() => {
+
+                    }}>
+                        <div >
+                            <img src={'/Projects/InnerChildLiving/DSC01911.jpg'} className={styles.image} />
+                        </div>
+                    </button>
                 </div>
                 <div className={styles.imagesRowContainer} >
                     <div className={styles.imageThreeContainer}>

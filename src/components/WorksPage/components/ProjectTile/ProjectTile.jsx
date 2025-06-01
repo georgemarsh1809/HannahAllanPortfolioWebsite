@@ -17,7 +17,7 @@ export function ProjectTile(props) {
             <div className={styles.projectTileInfo}>
                 <p>
                     {project === "TenthPlanet" ? "10th Planet" :
-                        project === "InnerChildLiving" ? "Inner Child Living // Ajith" :
+                        project === "InnerChildLiving" ? "Ajith // Inner Child Living" :
                             project === "MonsoonFN" ? "Monsoon Gym //" + "Fight Night" :
                                 project === "SacredSpaces" ? "Sacred Spaces" :
                                     project === "Fractured" ? "Fractured" :

@@ -15,6 +15,7 @@
 .project-tile-info {
     font-family: "Abril Fatface";
     font-size: 1.75rem;
+    line-height: 120%;
     display: flex;
     text-align: center;
     justify-content: center;

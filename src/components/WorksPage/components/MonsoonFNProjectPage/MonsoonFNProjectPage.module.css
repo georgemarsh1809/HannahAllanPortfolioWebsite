@@ -189,7 +189,7 @@
 .image-sixteen-container {
     position: relative;
     width: 73%;
-    margin-top: 21%;
+    margin-top: 15%;
     max-width: 800px;
     height: auto;
     left: 1%;
@@ -324,6 +324,7 @@
     position: relative;
     width: 41%;
     margin-top: 8%;
+    margin-bottom: 10%;
     max-width: 440px;
     height: auto;
     left: 6%;

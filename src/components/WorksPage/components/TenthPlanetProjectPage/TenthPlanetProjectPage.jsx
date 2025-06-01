@@ -18,7 +18,6 @@ export const TenthPlanetProjectPage = () => {
                         was founded out of pure love for the sport by long term resident of the island,
                         Luke White, co-owner and General Manager of Monsoon Gym, a dedicated Muay Thai training facility on the island.
                     </p>
-
                     <p>
                         These images were taken across several different training sessions at 10PKT which include
                         beginners, advanced, open mat, ‘10-round-Tuesday’ and positional sparring. Luke has created not only a
@@ -48,7 +47,7 @@ export const TenthPlanetProjectPage = () => {
                 </div>
                 <div className={styles.imagesRowContainer} >
                     <div className={styles.imageFourContainer}>
-                        <img src={'/Projects/10thPlanet/DSC03463bw.jpg'} className={styles.image} />
+                        <img src={'/Projects/10thPlanet/10thplanet2025-0008.jpg'} className={styles.image} />
                     </div>
                 </div>
                 <div className={styles.imagesRowContainer} >
