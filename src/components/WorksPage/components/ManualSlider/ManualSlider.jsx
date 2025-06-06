@@ -1,6 +1,4 @@
 import styles from './ManualSlider.module.css';
-import { useEffect } from 'react';
-
 import { useStore } from '../../../../StateManagement/store';
 
 export const ManualSlider = ({ project, img }) => {
