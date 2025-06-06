@@ -9,7 +9,7 @@ export function ProjectTile(props) {
             project === "InnerChildLiving" ? '/Projects/InnerChildLiving/DSC01865.jpg' :
                 project === "MonsoonFN" ? '/Projects/Monsoon Gym Fight Night/016.jpg' :
                     project === "SacredSpaces" ? '/Projects/SacredSpaces/coverImage.jpg' :
-                        project === "Fractured" ? '/Projects/Fractured/013.jpg' :
+                        project === "Fractured" ? '/Projects/Fractured/coverImage.jpg' :
                             project === "Chris&Chamilla" ? '/Projects/Chris&Chamilla/024.jpg' : ""
 
     return (
