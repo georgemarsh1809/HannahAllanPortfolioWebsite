@@ -1,27 +1,26 @@
 :root {
-  color: #1B1212;
-  background-color: #f5f5f5;
+    color: #1b1212;
+    background-color: #f5f5f5;
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 html {
-  /* These 2 lines ensure scrollbar is hidden, 
+    /* These 2 lines ensure scrollbar is hidden, 
   but user can still scroll */
-  scrollbar-width: none;
-  -ms-overflow-style: none;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
 }
 
-
 body {
-  margin: 0;
-  display: flex;
-  min-width: 100dvw;
-  height: 100dvh;
-  line-height: 140%;
+    margin: 0;
+    display: flex;
+    min-width: 100dvw;
+    height: 100dvh;
+    line-height: 140%;
 }
 
 /* 
@@ -30,11 +29,11 @@ a {
 } */
 
 header {
-  display: flex;
-  top: 0;
-  position: sticky;
-  flex-direction: column;
-  min-width: 100vw;
-  width: 100vw;
-  z-index: 10;
+    display: flex;
+    top: 0;
+    position: sticky;
+    flex-direction: column;
+    min-width: 100vw;
+    width: 100vw;
+    z-index: 10;
 }

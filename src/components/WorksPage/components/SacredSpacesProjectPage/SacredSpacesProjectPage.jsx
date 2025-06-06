@@ -1,10 +1,13 @@
 import { useEffect } from 'react';
 import styles from './SacredSpacesProjectPage.module.css';
+import { useStore } from '../../../../StateManagement/store';
 
 export const SacredSpacesProjectPage = () => {
     useEffect(() => {
         window.scrollTo({ top: 0 });
     }, []);
+
+    const { toggleManualSlider } = useStore();
 
     return (
         <>

@@ -1,9 +1,7 @@
-import { useState, useEffect } from 'react'
-import styles from './Slider.module.css'
+import { useState, useEffect } from 'react';
+import styles from './AutoSlider.module.css';
 
-
-export const Slider = ({ imageUrls }) => {
-
+export const AutoSlider = ({ imageUrls }) => {
     const [currentIndex, setCurrentIndex] = useState(0);
 
     useEffect(() => {
@@ -26,12 +24,14 @@ export const Slider = ({ imageUrls }) => {
                         key={`image-${index}`}
                         src={imageUrl}
                         alt={`Image ${index + 1}`}
-                        className={`${styles.image} ${index === currentIndex ? styles.active : styles.inactive}`}
+                        className={`${styles.image} ${
+                            index === currentIndex
+                                ? styles.active
+                                : styles.inactive
+                        }`}
                     />
                 ))}
             </div>
         </div>
-    )
-}
-
-
+    );
+};

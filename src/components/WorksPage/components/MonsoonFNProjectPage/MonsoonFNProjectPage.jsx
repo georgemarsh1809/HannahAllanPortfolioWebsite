@@ -1,3 +1,4 @@
+import { useStore } from '../../../../StateManagement/store';
 import styles from './MonsoonFNProjectPage.module.css';
 import { useEffect } from 'react';
 
@@ -5,6 +6,8 @@ export const MonsoonFNProjectPage = () => {
     useEffect(() => {
         window.scrollTo({ top: 0 });
     }, []);
+
+    const { toggleManualSlider } = useStore();
 
     return (
         <>

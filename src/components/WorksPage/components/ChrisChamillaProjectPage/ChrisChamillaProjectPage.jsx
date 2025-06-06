@@ -1,13 +1,18 @@
 import styles from './ChrisChamillaProjectPage.module.css';
 import { useEffect } from 'react';
+import { ManualSlider } from '../ManualSlider/ManualSlider';
+import { useStore } from '../../../../StateManagement/store';
 
 export const ChrisChamillaProjectPage = () => {
     useEffect(() => {
         window.scrollTo({ top: 0 });
     }, []);
 
+    const { toggleManualSlider } = useStore();
+
     return (
         <>
+            <ManualSlider />
             <div className={styles.projectContextContainer}>
                 <div className={styles.contextTitle}>
                     <p>Chris & Chamilla</p>
@@ -32,12 +37,15 @@ export const ChrisChamillaProjectPage = () => {
 
             <div className={styles.imagesContainer}>
                 <div className={styles.imagesRowContainer}>
-                    <div className={styles.imageOneContainer}>
+                    <button
+                        className={`${styles.imageOneContainer} ${styles.imgButton}`}
+                        onClick={toggleManualSlider}
+                    >
                         <img
                             src={'/Projects/Chris&Chamilla/006.jpg'}
                             className={styles.image}
                         />
-                    </div>
+                    </button>
                 </div>
                 <div className={styles.imagesRowContainer}>
                     <div className={styles.imageTwoContainer}>

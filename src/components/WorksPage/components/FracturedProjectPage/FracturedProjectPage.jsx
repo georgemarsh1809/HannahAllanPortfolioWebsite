@@ -1,10 +1,16 @@
 import { useEffect } from 'react';
 import styles from './FracturedProjectPage.module.css';
+import { useStore } from '../../../../StateManagement/store';
 
 export const FracturedProjectPage = () => {
     useEffect(() => {
         window.scrollTo({ top: 0 });
     }, []);
+
+    const { toggleManualSlider } = useStore();
+    // const openSlider = () => {
+    //     console.log('Open image slider');
+    // };
 
     return (
         <>
@@ -43,12 +49,12 @@ export const FracturedProjectPage = () => {
 
             <div className={styles.imagesContainer}>
                 <div className={styles.imagesRowContainer}>
-                    <div className={styles.imageOneContainer}>
+                    <button className={styles.imageOneContainer}>
                         <img
                             src={'/Projects/Fractured/01.jpg'}
                             className={styles.image}
                         />
-                    </div>
+                    </button>
                 </div>
                 <div className={styles.imagesRowContainer}>
                     <div className={styles.imageTwoContainer}>
