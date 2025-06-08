@@ -1,7 +1,7 @@
 import styles from './ManualSlider.module.css';
 import { useStore } from '../../../../StateManagement/store';
 
-export const ManualSlider = ({ project, img }) => {
+export const ManualSlider = ({ img }) => {
     const { showManualSlider, toggleManualSlider } = useStore();
 
     return (
@@ -13,7 +13,13 @@ export const ManualSlider = ({ project, img }) => {
             <button className={styles.closeButton} onClick={toggleManualSlider}>
                 <i className="fa-solid fa-xmark"></i>
             </button>
-            <img />
+            <button>
+                <i className="fa-solid fa-arrow-left"></i>
+            </button>
+            <img src={img} className={styles.sliderImage} />
+            <button>
+                <i className="fa-solid fa-arrow-right"></i>
+            </button>
         </div>
     );
 };

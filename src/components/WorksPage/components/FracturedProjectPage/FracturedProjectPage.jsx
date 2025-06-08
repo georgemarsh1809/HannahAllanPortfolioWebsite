@@ -8,9 +8,6 @@ export const FracturedProjectPage = () => {
     }, []);
 
     const { toggleManualSlider } = useStore();
-    // const openSlider = () => {
-    //     console.log('Open image slider');
-    // };
 
     return (
         <>

@@ -54,6 +54,12 @@
     height: auto;
 }
 
+.image:hover {
+    cursor: pointer;
+    opacity: 0.7;
+    transition: opacity 0.2s;
+}
+
 .img-button {
     border: none;
     background: none;
@@ -66,11 +72,6 @@
     height: auto;
     border: none;
     background: none;
-}
-.image-one-container:hover {
-    cursor: pointer;
-    opacity: 0.7;
-    transition: opacity 0.2s;
 }
 
 .image-two-container {
@@ -175,7 +176,7 @@
 .image-thirteen-container {
     position: relative;
     /* width: 51%; */
-    margin-top: 5%;
+    margin-top: -40%;
     max-width: 620px;
     height: auto;
     left: 0%;
@@ -183,7 +184,7 @@
 
 .image-fourteen-container {
     position: relative;
-    margin-top: 30%;
+    margin-top: 22%;
     /* width: 68%; */
     max-width: 430px;
     height: auto;

@@ -15,9 +15,9 @@ html {
     -ms-overflow-style: none;
 }
 
+html,
 body {
     margin: 0;
-    display: flex;
     min-width: 100dvw;
     height: 100dvh;
     line-height: 140%;
@@ -27,13 +27,3 @@ body {
 a {
   text-decoration: none;
 } */
-
-header {
-    display: flex;
-    top: 0;
-    position: sticky;
-    flex-direction: column;
-    min-width: 100vw;
-    width: 100vw;
-    z-index: 10;
-}

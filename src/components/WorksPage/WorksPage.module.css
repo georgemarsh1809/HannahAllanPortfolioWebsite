@@ -1,87 +1,85 @@
 .works-page-container {
-  display: flex;
-  flex-direction: column;
-  max-width: 1000px;
-  width: 100%;
-  padding: 10px;
-  margin-top: 150px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 200px;
-  /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    max-width: 1000px;
+    width: 100%;
+    padding: 10px;
+    margin-top: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 200px;
+    /* background-color: red; */
 }
 
 .works-page-row-container {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  /* background-color: blue; */
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    /* background-color: blue; */
 }
 
 .works-page-row-container:nth-child(1) {
-  padding: 1% 5%;
+    padding: 1% 5%;
 }
 
 .works-page-row-container:nth-child(2) {
-  padding: 10%;
-  padding-left: 5%;
+    padding: 10%;
+    padding-left: 5%;
 }
 
 .project-tile-one {
-  position: relative;
-  height: fit-content;
-  border: none;
-  left: 5%;
-  width: 50%;
-  max-width: 300px;
+    position: relative;
+    height: fit-content;
+    border: none;
+    width: 50%;
+    max-width: 300px;
 }
 
 .project-tile-two {
-  /* needs to be changed to be responsive */
-  position: relative;
-  height: fit-content;
-  left: 18%;
-  top: 40px;
-  width: 50%;
-  max-width: 500px;
+    /* needs to be changed to be responsive */
+    position: relative;
+    height: fit-content;
+    left: 10%;
+    top: 40px;
+    width: 50%;
+    max-width: 500px;
 }
 
 .project-tile-three {
-  position: relative;
-  height: fit-content;
-  margin-top: auto;
-  max-width: 600px;
-  width: 50%;
-  top: -60px;
+    position: relative;
+    height: fit-content;
+    margin-top: auto;
+    max-width: 600px;
+    width: 50%;
+    top: -60px;
 }
 
 .project-tile-four {
-  position: relative;
-  height: fit-content;
-  width: 50%;
-  max-width: 300px;
-  top: -120px;
-  left: 10%;
-  margin-top: auto;
+    position: relative;
+    height: fit-content;
+    width: 50%;
+    max-width: 300px;
+    top: -120px;
+    left: 10%;
+    margin-top: auto;
 }
 
 .project-tile-five {
-  position: relative;
-  /* right: 10%; */
-  left: 4%;
-  top: -80px;
-  /* margin-top: 10px; */
-  max-width: 320px;
+    position: relative;
+    /* right: 10%; */
+    left: 4%;
+    top: -80px;
+    /* margin-top: 10px; */
+    max-width: 320px;
 }
 
 .project-tile-six {
-  position: relative;
-  height: fit-content;
-  position: relative;
-  /* right: 10%; */
-  left: 15%;
-  top: -50px;
-  margin-top: auto;
-  width: 48%;
-  max-width: 500px;
+    position: relative;
+    height: fit-content;
+    position: relative;
+    /* right: 10%; */
+    left: 12%;
+    margin-top: 4%;
+    /* width: 48%; */
+    max-width: 450px;
 }
