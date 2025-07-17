@@ -8,7 +8,7 @@
 }
 
 .context-body {
-    font-family: "Josefin Sans";
+    font-family: 'Josefin Sans';
     font-weight: 350;
     word-spacing: 4px;
     display: flex;
@@ -19,7 +19,7 @@
 }
 
 .context-title {
-    font-family: "Josefin Sans";
+    font-family: 'Josefin Sans';
     font-size: 20px;
     display: flex;
     justify-content: center;
@@ -53,6 +53,17 @@
     display: block;
     max-width: 100%;
     height: auto;
+    transition: opacity 0.2s;
+}
+
+.image:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.img-button {
+    border: none;
+    background: none;
 }
 
 .image-one-container {
@@ -87,7 +98,7 @@
     width: 27.75%;
     height: auto;
     margin-top: 10%;
-    left: 45%
+    left: 45%;
 }
 
 .image-five-container {
@@ -104,7 +115,7 @@
     width: 55.5%;
     height: auto;
     margin-top: 15%;
-    left: 25%
+    left: 25%;
 }
 
 .image-seven-container {
@@ -112,7 +123,7 @@
     max-width: 350px;
     width: 32.375%;
     height: auto;
-    left: 5%
+    left: 5%;
 }
 
 .image-eight-container {
@@ -121,7 +132,7 @@
     width: 50.875%;
     height: auto;
     left: 45%;
-    top: -30px
+    top: -30px;
 }
 
 .image-nine-container {
@@ -175,7 +186,7 @@
     max-width: 450px;
     width: 41.625%;
     height: auto;
-    left: 56%
+    left: 56%;
 }
 
 .image-fifteen-container {
