@@ -1,7 +1,26 @@
-import React from 'react';
 import styles from './ContactPage.module.css';
+import emailjs from '@emailjs/browser';
+import React, { useRef } from 'react';
 
 export const ContactPage = () => {
+    const form = useRef();
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs
+            .sendForm('HA_test', 'template_hccqrwp', form.current, {
+                publicKey: 'PwzPf7tSOvZlB35LR',
+            })
+            .then(
+                () => {
+                    console.log('SUCCESS!');
+                },
+                (error) => {
+                    console.log('FAILED...', error.text);
+                }
+            );
+    };
     return (
         <>
             <div className={styles.contactPage}>
@@ -20,18 +39,27 @@ export const ContactPage = () => {
                     </p>
                 </div>
 
-                <form className={styles.contactForm}>
+                <form
+                    className={styles.contactForm}
+                    ref={form}
+                    onSubmit={sendEmail}
+                >
                     <div className={styles.formGroup}>
                         <label htmlFor="name">FULL NAME (required)</label>
-                        <input type="text" id="name" required />
+                        <input type="text" id="name" name="name" required />
                     </div>
                     <div className={styles.formGroup}>
                         <label htmlFor="email">EMAIL (required)</label>
-                        <input type="text" id="email" required />
+                        <input type="text" id="email" name="email" required />
                     </div>
                     <div className={styles.formGroup}>
                         <label htmlFor="subject">SUBJECT (required)</label>
-                        <input type="text" id="subject" required />
+                        <input
+                            type="text"
+                            id="subject"
+                            name="subject"
+                            required
+                        />
                     </div>
                     <div className={styles.formGroup}>
                         <label htmlFor="name">MESSAGE (required)</label>

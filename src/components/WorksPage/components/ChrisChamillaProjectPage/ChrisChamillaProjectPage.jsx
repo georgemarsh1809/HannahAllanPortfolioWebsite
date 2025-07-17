@@ -3,8 +3,33 @@ import { useEffect, useState } from 'react';
 import { ManualSlider } from '../ManualSlider/ManualSlider';
 import { useStore } from '../../../../StateManagement/store';
 
-images = [];
-const IMG_PATH = '/Projects/Chris&Chamilla';
+const IMAGES = [
+    '/Projects/Chris&Chamilla/006.jpg',
+    '/Projects/Chris&Chamilla/015.jpg',
+    '/Projects/Chris&Chamilla/016.jpg',
+    '/Projects/Chris&Chamilla/007.jpg',
+    '/Projects/Chris&Chamilla/009.jpg',
+    '/Projects/Chris&Chamilla/001.jpg',
+    '/Projects/Chris&Chamilla/008.jpg',
+    '/Projects/Chris&Chamilla/017.jpg',
+    '/Projects/Chris&Chamilla/018.jpg',
+    '/Projects/Chris&Chamilla/019.jpg',
+    '/Projects/Chris&Chamilla/004.jpg',
+    '/Projects/Chris&Chamilla/021.jpg',
+    '/Projects/Chris&Chamilla/003.jpg',
+    '/Projects/Chris&Chamilla/002.jpg',
+    '/Projects/Chris&Chamilla/022.jpg',
+    '/Projects/Chris&Chamilla/023.jpg',
+    '/Projects/Chris&Chamilla/012.jpg',
+    '/Projects/Chris&Chamilla/010.jpg',
+    '/Projects/Chris&Chamilla/011.jpg',
+    '/Projects/Chris&Chamilla/013.jpg',
+    '/Projects/Chris&Chamilla/024.jpg',
+    '/Projects/Chris&Chamilla/025.jpg',
+    '/Projects/Chris&Chamilla/005.jpg',
+    '/Projects/Chris&Chamilla/014.jpg',
+    '/Projects/Chris&Chamilla/026.jpg',
+];
 
 export const ChrisChamillaProjectPage = () => {
     useEffect(() => {
@@ -16,12 +41,34 @@ export const ChrisChamillaProjectPage = () => {
 
     const openSlider = (newImg) => {
         toggleManualSlider(!showManualSlider);
-        setSliderImg(`${IMG_PATH}/${newImg}.jpg`);
+        setSliderImg(newImg);
+    };
+
+    const nextSliderImage = () => {
+        const currentIndex = IMAGES.indexOf(sliderImg);
+        if (currentIndex === IMAGES.length - 1) {
+            return;
+        }
+        const nextIndex = currentIndex + 1;
+        setSliderImg(IMAGES[nextIndex]);
+    };
+
+    const prevSliderImage = () => {
+        const currentIndex = IMAGES.indexOf(sliderImg);
+        if (currentIndex === 0) {
+            return;
+        }
+        const nextIndex = currentIndex - 1;
+        setSliderImg(IMAGES[nextIndex]);
     };
 
     return (
         <>
-            <ManualSlider img={sliderImg} />
+            <ManualSlider
+                img={sliderImg}
+                nextSliderImage={nextSliderImage}
+                prevSliderImage={prevSliderImage}
+            />
             <div className={styles.projectContextContainer}>
                 <div className={styles.contextTitle}>
                     <p>Chris & Chamilla</p>
@@ -49,319 +96,244 @@ export const ChrisChamillaProjectPage = () => {
                     <button
                         className={`${styles.imageOneContainer} ${styles.imgButton}`}
                         onClick={() => {
-                            openSlider('006');
+                            openSlider(IMAGES[0]);
                         }}
                     >
-                        <img
-                            src={`${IMG_PATH}/006.jpg`}
-                            className={styles.image}
-                        />
+                        <img src={IMAGES[0]} className={styles.image} />
                     </button>
                 </div>
                 <div className={styles.imagesRowContainer}>
                     <button
                         className={`${styles.imageTwoContainer} ${styles.imgButton}`}
                         onClick={() => {
-                            openSlider('015');
+                            openSlider(IMAGES[1]);
                         }}
                     >
-                        <img
-                            src={`${IMG_PATH}/015.jpg`}
-                            className={styles.image}
-                        />
+                        <img src={IMAGES[1]} className={styles.image} />
                     </button>
                 </div>
                 <div className={styles.imagesRowContainer}>
                     <button
                         className={`${styles.imageThreeContainer} ${styles.imgButton}`}
                         onClick={() => {
-                            openSlider('016');
+                            openSlider(IMAGES[2]);
                         }}
                     >
-                        <img
-                            src={`${IMG_PATH}/016.jpg`}
-                            className={styles.image}
-                        />
+                        <img src={IMAGES[2]} className={styles.image} />
                     </button>
                 </div>
                 <div className={styles.imagesRowContainer}>
                     <button
                         className={`${styles.imageFourContainer} ${styles.imgButton}`}
                         onClick={() => {
-                            openSlider('007');
+                            openSlider(IMAGES[3]);
                         }}
                     >
-                        <img
-                            src={`${IMG_PATH}/007.jpg`}
-                            className={styles.image}
-                        />
+                        <img src={IMAGES[3]} className={styles.image} />
                     </button>
                 </div>
                 <div className={styles.imagesRowContainer}>
                     <button
                         className={`${styles.imageFiveContainer} ${styles.imgButton}`}
                         onClick={() => {
-                            openSlider('009');
+                            openSlider(IMAGES[4]);
                         }}
                     >
-                        <img
-                            src={`${IMG_PATH}/009.jpg`}
-                            className={styles.image}
-                        />
+                        <img src={IMAGES[4]} className={styles.image} />
                     </button>
                     <button
                         className={`${styles.imageSixContainer} ${styles.imgButton}`}
                         onClick={() => {
-                            openSlider('001');
+                            openSlider(IMAGES[5]);
                         }}
                     >
-                        <img
-                            src={`${IMG_PATH}/001.jpg`}
-                            className={styles.image}
-                        />
+                        <img src={IMAGES[5]} className={styles.image} />
                     </button>
                 </div>
                 <div className={styles.imagesRowContainer}>
                     <button
                         className={`${styles.imageSevenContainer} ${styles.imgButton}`}
                         onClick={() => {
-                            openSlider('008');
+                            openSlider(IMAGES[6]);
                         }}
                     >
-                        <img
-                            src={`${IMG_PATH}/008.jpg`}
-                            className={styles.image}
-                        />
+                        <img src={IMAGES[6]} className={styles.image} />
                     </button>
                 </div>
                 <div className={styles.imagesRowContainer}>
                     <button
                         className={`${styles.imageEightContainer} ${styles.imgButton}`}
                         onClick={() => {
-                            openSlider('017');
+                            openSlider(IMAGES[7]);
                         }}
                     >
-                        <img
-                            src={`${IMG_PATH}/017.jpg`}
-                            className={styles.image}
-                        />
+                        <img src={IMAGES[7]} className={styles.image} />
                     </button>
                 </div>
                 <div className={styles.imagesRowContainer}>
                     <button
                         className={`${styles.imageNineContainer} ${styles.imgButton}`}
                         onClick={() => {
-                            openSlider('018');
+                            openSlider(IMAGES[8]);
                         }}
                     >
-                        <img
-                            src={`${IMG_PATH}/018.jpg`}
-                            className={styles.image}
-                        />
+                        <img src={IMAGES[8]} className={styles.image} />
                     </button>
                 </div>
                 <div className={styles.imagesRowContainer}>
                     <button
                         className={`${styles.imageTenContainer} ${styles.imgButton}`}
                         onClick={() => {
-                            openSlider('019');
+                            openSlider(IMAGES[9]);
                         }}
                     >
-                        <img
-                            src={`${IMG_PATH}/019.jpg`}
-                            className={styles.image}
-                        />
+                        <img src={IMAGES[9]} className={styles.image} />
                     </button>
                 </div>
                 <div className={styles.imagesRowContainer}>
                     <button
                         className={`${styles.imageElevenContainer} ${styles.imgButton}`}
                         onClick={() => {
-                            openSlider('004');
+                            openSlider(IMAGES[10]);
                         }}
                     >
-                        <img
-                            src={`${IMG_PATH}/004.jpg`}
-                            className={styles.image}
-                        />
+                        <img src={IMAGES[10]} className={styles.image} />
                     </button>
                 </div>
                 <div className={styles.imagesRowContainer}>
                     <button
                         className={`${styles.imageTwelveContainer} ${styles.imgButton}`}
                         onClick={() => {
-                            openSlider('021');
+                            openSlider(IMAGES[11]);
                         }}
                     >
-                        <img
-                            src={`${IMG_PATH}/021.jpg`}
-                            className={styles.image}
-                        />
+                        <img src={IMAGES[11]} className={styles.image} />
                     </button>
                 </div>
                 <div className={styles.imagesRowContainer}>
                     <button
                         className={`${styles.imageThirteenContainer} ${styles.imgButton}`}
                         onClick={() => {
-                            openSlider('003');
+                            openSlider(IMAGES[12]);
                         }}
                     >
-                        <img
-                            src={`${IMG_PATH}/003.jpg`}
-                            className={styles.image}
-                        />
+                        <img src={IMAGES[12]} className={styles.image} />
                     </button>
                     <button
                         className={`${styles.imageFourteenContainer} ${styles.imgButton}`}
                         onClick={() => {
-                            openSlider('002');
+                            openSlider(IMAGES[13]);
                         }}
                     >
-                        <img
-                            src={`${IMG_PATH}/002.jpg`}
-                            className={styles.image}
-                        />
+                        <img src={IMAGES[13]} className={styles.image} />
                     </button>
                 </div>
                 <div className={styles.imagesRowContainer}>
                     <button
                         className={`${styles.imageFifteenContainer} ${styles.imgButton}`}
                         onClick={() => {
-                            openSlider('022');
+                            openSlider(IMAGES[14]);
                         }}
                     >
-                        <img
-                            src={`${IMG_PATH}/022.jpg`}
-                            className={styles.image}
-                        />
+                        <img src={IMAGES[14]} className={styles.image} />
                     </button>
                 </div>
                 <div className={styles.imagesRowContainer}>
                     <button
                         className={`${styles.imageSixteenContainer} ${styles.imgButton}`}
                         onClick={() => {
-                            openSlider('023');
+                            openSlider(IMAGES[15]);
                         }}
                     >
-                        <img
-                            src={`${IMG_PATH}/023.jpg`}
-                            className={styles.image}
-                        />
+                        <img src={IMAGES[15]} className={styles.image} />
                     </button>
                 </div>
                 <div className={styles.imagesRowContainer}>
                     <button
                         className={`${styles.imageSeventeenContainer} ${styles.imgButton}`}
                         onClick={() => {
-                            openSlider('012');
+                            openSlider(IMAGES[16]);
                         }}
                     >
-                        <img
-                            src={`${IMG_PATH}/012.jpg`}
-                            className={styles.image}
-                        />
+                        <img src={IMAGES[16]} className={styles.image} />
                     </button>
                 </div>
                 <div className={styles.imagesRowContainer}>
                     <button
                         className={`${styles.imageEighteenContainer} ${styles.imgButton}`}
                         onClick={() => {
-                            openSlider('010');
+                            openSlider(IMAGES[17]);
                         }}
                     >
-                        <img
-                            src={`${IMG_PATH}/010.jpg`}
-                            className={styles.image}
-                        />
+                        <img src={IMAGES[17]} className={styles.image} />
                     </button>
                 </div>
                 <div className={styles.imagesRowContainer}>
                     <button
                         className={`${styles.imageNineteenContainer} ${styles.imgButton}`}
                         onClick={() => {
-                            openSlider('011');
+                            openSlider(IMAGES[18]);
                         }}
                     >
-                        <img
-                            src={`${IMG_PATH}/011.jpg`}
-                            className={styles.image}
-                        />
+                        <img src={IMAGES[18]} className={styles.image} />
                     </button>
                 </div>
                 <div className={styles.imagesRowContainer}>
                     <button
                         className={`${styles.imageTwentyContainer} ${styles.imgButton}`}
                         onClick={() => {
-                            openSlider('013');
+                            openSlider(IMAGES[19]);
                         }}
                     >
-                        <img
-                            src={`${IMG_PATH}/013.jpg`}
-                            className={styles.image}
-                        />
+                        <img src={IMAGES[19]} className={styles.image} />
                     </button>
                 </div>
                 <div className={styles.imagesRowContainer}>
                     <button
                         className={`${styles.imageTwentyOneContainer} ${styles.imgButton}`}
                         onClick={() => {
-                            openSlider('024');
+                            openSlider(IMAGES[20]);
                         }}
                     >
-                        <img
-                            src={`${IMG_PATH}/024.jpg`}
-                            className={styles.image}
-                        />
+                        <img src={IMAGES[20]} className={styles.image} />
                     </button>
                 </div>
                 <div className={styles.imagesRowContainer}>
                     <button
                         className={`${styles.imageTwentyTwoContainer} ${styles.imgButton}`}
                         onClick={() => {
-                            openSlider('025');
+                            openSlider(IMAGES[21]);
                         }}
                     >
-                        <img
-                            src={`${IMG_PATH}/025.jpg`}
-                            className={styles.image}
-                        />
+                        <img src={IMAGES[21]} className={styles.image} />
                     </button>
                     <button
                         className={`${styles.imageTwentyThreeContainer} ${styles.imgButton}`}
                         onClick={() => {
-                            openSlider('005');
+                            openSlider(IMAGES[22]);
                         }}
                     >
-                        <img
-                            src={`${IMG_PATH}/005.jpg`}
-                            className={styles.image}
-                        />
+                        <img src={IMAGES[22]} className={styles.image} />
                     </button>
                 </div>
                 <div className={styles.imagesRowContainer}>
                     <button
                         className={`${styles.imageTwentyFourContainer} ${styles.imgButton}`}
                         onClick={() => {
-                            openSlider('014');
+                            openSlider(IMAGES[23]);
                         }}
                     >
-                        <img
-                            src={`${IMG_PATH}/014.jpg`}
-                            className={styles.image}
-                        />
+                        <img src={IMAGES[23]} className={styles.image} />
                     </button>
                 </div>
                 <div className={styles.imagesRowContainer}>
                     <button
                         className={`${styles.imageTwentyFourContainer} ${styles.imgButton}`}
                         onClick={() => {
-                            openSlider('026');
+                            openSlider(IMAGES[24]);
                         }}
                     >
-                        <img
-                            src={`${IMG_PATH}/026.jpg`}
-                            className={styles.image}
-                        />
+                        <img src={IMAGES[24]} className={styles.image} />
                     </button>
                 </div>
             </div>
