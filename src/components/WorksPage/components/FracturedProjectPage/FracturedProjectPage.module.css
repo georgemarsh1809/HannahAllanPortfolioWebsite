@@ -53,6 +53,17 @@
     display: block;
     max-width: 100%;
     height: auto;
+    transition: opacity 0.2s;
+}
+
+.image:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.img-button {
+    border: none;
+    background: none;
 }
 
 .image-one-container {

@@ -1,16 +1,74 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import styles from './SacredSpacesProjectPage.module.css';
 import { useStore } from '../../../../StateManagement/store';
+import { ManualSlider } from '../ManualSlider/ManualSlider';
+
+const IMAGES = [
+    '/Projects/SacredSpaces/04.jpg',
+    '/Projects/SacredSpaces/05.jpg',
+    '/Projects/SacredSpaces/12.jpg',
+    '/Projects/SacredSpaces/17.jpg',
+    '/Projects/SacredSpaces/25.jpg',
+    '/Projects/SacredSpaces/22.jpg',
+    '/Projects/SacredSpaces/15.jpg',
+    '/Projects/SacredSpaces/10.jpg',
+    '/Projects/SacredSpaces/03.jpg',
+    '/Projects/SacredSpaces/11.jpg',
+    '/Projects/SacredSpaces/18.jpg',
+    '/Projects/SacredSpaces/23.jpg',
+    '/Projects/SacredSpaces/20.jpg',
+    '/Projects/SacredSpaces/24.jpg',
+    '/Projects/SacredSpaces/13.jpg',
+    '/Projects/SacredSpaces/09.jpg',
+    '/Projects/SacredSpaces/01.jpg',
+    '/Projects/SacredSpaces/14.jpg',
+    '/Projects/SacredSpaces/26.jpg',
+    '/Projects/SacredSpaces/02.jpg',
+    '/Projects/SacredSpaces/06.jpg',
+    '/Projects/SacredSpaces/16.jpg',
+    '/Projects/SacredSpaces/19.jpg',
+    '/Projects/SacredSpaces/21.jpg',
+    '/Projects/SacredSpaces/07.jpg',
+];
 
 export const SacredSpacesProjectPage = () => {
     useEffect(() => {
         window.scrollTo({ top: 0 });
     }, []);
 
-    const { toggleManualSlider } = useStore();
+    const [sliderImg, setSliderImg] = useState();
+    const { toggleManualSlider, showManualSlider } = useStore();
+
+    const openSlider = (newImg) => {
+        toggleManualSlider(!showManualSlider);
+        setSliderImg(newImg);
+    };
+
+    const nextSliderImage = () => {
+        const currentIndex = IMAGES.indexOf(sliderImg);
+        if (currentIndex === IMAGES.length - 1) {
+            return;
+        }
+        const nextIndex = currentIndex + 1;
+        setSliderImg(IMAGES[nextIndex]);
+    };
+
+    const prevSliderImage = () => {
+        const currentIndex = IMAGES.indexOf(sliderImg);
+        if (currentIndex === 0) {
+            return;
+        }
+        const nextIndex = currentIndex - 1;
+        setSliderImg(IMAGES[nextIndex]);
+    };
 
     return (
         <>
+            <ManualSlider
+                img={sliderImg}
+                nextSliderImage={nextSliderImage}
+                prevSliderImage={prevSliderImage}
+            />
             <div className={styles.projectContextContainer}>
                 <div className={styles.contextTitle}>
                     <p>Sacred Spaces</p>
@@ -58,202 +116,252 @@ export const SacredSpacesProjectPage = () => {
 
             <div className={styles.imagesContainer}>
                 <div className={styles.imagesRowContainer}>
-                    <div className={styles.imageOneContainer}>
-                        <img
-                            src={'/Projects/SacredSpaces/04.jpg'}
-                            className={styles.image}
-                        />
-                    </div>
+                    <button
+                        className={`${styles.imageOneContainer} ${styles.imgButton}`}
+                        onClick={() => {
+                            openSlider(IMAGES[0]);
+                        }}
+                    >
+                        <img src={IMAGES[0]} className={styles.image} />
+                    </button>
                 </div>
                 <div className={styles.imagesRowContainer}>
-                    <div className={styles.imageTwoContainer}>
-                        <img
-                            src={'/Projects/SacredSpaces/05.jpg'}
-                            className={styles.image}
-                        />
-                    </div>
+                    <button
+                        className={`${styles.imageTwoContainer} ${styles.imgButton}`}
+                        onClick={() => {
+                            openSlider(IMAGES[1]);
+                        }}
+                    >
+                        <img src={IMAGES[1]} className={styles.image} />
+                    </button>
                 </div>
                 <div className={styles.imagesRowContainer}>
-                    <div className={styles.imageThreeContainer}>
-                        <img
-                            src={'/Projects/SacredSpaces/12.jpg'}
-                            className={styles.image}
-                        />
-                    </div>
+                    <button
+                        className={`${styles.imageThreeContainer} ${styles.imgButton}`}
+                        onClick={() => {
+                            openSlider(IMAGES[2]);
+                        }}
+                    >
+                        <img src={IMAGES[2]} className={styles.image} />
+                    </button>
                 </div>
                 <div className={styles.imagesRowContainer}>
-                    <div className={styles.imageFourContainer}>
-                        <img
-                            src={'/Projects/SacredSpaces/17.jpg'}
-                            className={styles.image}
-                        />
-                    </div>
+                    <button
+                        className={`${styles.imageFourContainer} ${styles.imgButton}`}
+                        onClick={() => {
+                            openSlider(IMAGES[3]);
+                        }}
+                    >
+                        <img src={IMAGES[3]} className={styles.image} />
+                    </button>
                 </div>
                 <div className={styles.imagesRowContainer}>
-                    <div className={styles.imageFiveContainer}>
-                        <img
-                            src={'/Projects/SacredSpaces/25.jpg'}
-                            className={styles.image}
-                        />
-                    </div>
+                    <button
+                        className={`${styles.imageFiveContainer} ${styles.imgButton}`}
+                        onClick={() => {
+                            openSlider(IMAGES[4]);
+                        }}
+                    >
+                        <img src={IMAGES[4]} className={styles.image} />
+                    </button>
                 </div>
                 <div className={styles.imagesRowContainer}>
-                    <div className={styles.imageSixContainer}>
-                        <img
-                            src={'/Projects/SacredSpaces/22.jpg'}
-                            className={styles.image}
-                        />
-                    </div>
+                    <button
+                        className={`${styles.imageSixContainer} ${styles.imgButton}`}
+                        onClick={() => {
+                            openSlider(IMAGES[5]);
+                        }}
+                    >
+                        <img src={IMAGES[5]} className={styles.image} />
+                    </button>
                 </div>
                 <div className={styles.imagesRowContainer}>
-                    <div className={styles.imageSevenContainer}>
-                        <img
-                            src={'/Projects/SacredSpaces/15.jpg'}
-                            className={styles.image}
-                        />
-                    </div>
+                    <button
+                        className={`${styles.imageSevenContainer} ${styles.imgButton}`}
+                        onClick={() => {
+                            openSlider(IMAGES[6]);
+                        }}
+                    >
+                        <img src={IMAGES[6]} className={styles.image} />
+                    </button>
                 </div>
                 <div className={styles.imagesRowContainer}>
-                    <div className={styles.imageEightContainer}>
-                        <img
-                            src={'/Projects/SacredSpaces/10.jpg'}
-                            className={styles.image}
-                        />
-                    </div>
+                    <button
+                        className={`${styles.imageEightContainer} ${styles.imgButton}`}
+                        onClick={() => {
+                            openSlider(IMAGES[7]);
+                        }}
+                    >
+                        <img src={IMAGES[7]} className={styles.image} />
+                    </button>
                 </div>
                 <div className={styles.imagesRowContainer}>
-                    <div className={styles.imageNineContainer}>
-                        <img
-                            src={'/Projects/SacredSpaces/03.jpg'}
-                            className={styles.image}
-                        />
-                    </div>
+                    <button
+                        className={`${styles.imageNineContainer} ${styles.imgButton}`}
+                        onClick={() => {
+                            openSlider(IMAGES[8]);
+                        }}
+                    >
+                        <img src={IMAGES[8]} className={styles.image} />
+                    </button>
                 </div>
                 <div className={styles.imagesRowContainer}>
-                    <div className={styles.imageTenContainer}>
-                        <img
-                            src={'/Projects/SacredSpaces/11.jpg'}
-                            className={styles.image}
-                        />
-                    </div>
+                    <button
+                        className={`${styles.imageTenContainer} ${styles.imgButton}`}
+                        onClick={() => {
+                            openSlider(IMAGES[9]);
+                        }}
+                    >
+                        <img src={IMAGES[9]} className={styles.image} />
+                    </button>
                 </div>
                 <div className={styles.imagesRowContainer}>
-                    <div className={styles.imageElevenContainer}>
-                        <img
-                            src={'/Projects/SacredSpaces/18.jpg'}
-                            className={styles.image}
-                        />
-                    </div>
+                    <button
+                        className={`${styles.imageElevenContainer} ${styles.imgButton}`}
+                        onClick={() => {
+                            openSlider(IMAGES[10]);
+                        }}
+                    >
+                        <img src={IMAGES[10]} className={styles.image} />
+                    </button>
                 </div>
                 <div className={styles.imagesRowContainer}>
-                    <div className={styles.imageTwelveContainer}>
-                        <img
-                            src={'/Projects/SacredSpaces/23.jpg'}
-                            className={styles.image}
-                        />
-                    </div>
+                    <button
+                        className={`${styles.imageTwelveContainer} ${styles.imgButton}`}
+                        onClick={() => {
+                            openSlider(IMAGES[11]);
+                        }}
+                    >
+                        <img src={IMAGES[11]} className={styles.image} />
+                    </button>
                 </div>
                 <div className={styles.imagesRowContainer}>
-                    <div className={styles.imageThirteenContainer}>
-                        <img
-                            src={'/Projects/SacredSpaces/20.jpg'}
-                            className={styles.image}
-                        />
-                    </div>
-                    <div className={styles.imageFourteenContainer}>
-                        <img
-                            src={'/Projects/SacredSpaces/24.jpg'}
-                            className={styles.image}
-                        />
-                    </div>
+                    <button
+                        className={`${styles.imageThirteenContainer} ${styles.imgButton}`}
+                        onClick={() => {
+                            openSlider(IMAGES[12]);
+                        }}
+                    >
+                        <img src={IMAGES[12]} className={styles.image} />
+                    </button>
+                    <button
+                        className={`${styles.imageFourteenContainer} ${styles.imgButton}`}
+                        onClick={() => {
+                            openSlider(IMAGES[13]);
+                        }}
+                    >
+                        <img src={IMAGES[13]} className={styles.image} />
+                    </button>
                 </div>
                 <div className={styles.imagesRowContainer}>
-                    <div className={styles.imageFifteenContainer}>
-                        <img
-                            src={'/Projects/SacredSpaces/13.jpg'}
-                            className={styles.image}
-                        />
-                    </div>
+                    <button
+                        className={`${styles.imageFifteenContainer} ${styles.imgButton}`}
+                        onClick={() => {
+                            openSlider(IMAGES[14]);
+                        }}
+                    >
+                        <img src={IMAGES[14]} className={styles.image} />
+                    </button>
                 </div>
                 <div className={styles.imagesRowContainer}>
-                    <div className={styles.imageSixteenContainer}>
-                        <img
-                            src={'/Projects/SacredSpaces/09.jpg'}
-                            className={styles.image}
-                        />
-                    </div>
+                    <button
+                        className={`${styles.imageSixteenContainer} ${styles.imgButton}`}
+                        onClick={() => {
+                            openSlider(IMAGES[15]);
+                        }}
+                    >
+                        <img src={IMAGES[15]} className={styles.image} />
+                    </button>
                 </div>
                 <div className={styles.imagesRowContainer}>
-                    <div className={styles.imageSeventeenContainer}>
-                        <img
-                            src={'/Projects/SacredSpaces/01.jpg'}
-                            className={styles.image}
-                        />
-                    </div>
+                    <button
+                        className={`${styles.imageSeventeenContainer} ${styles.imgButton}`}
+                        onClick={() => {
+                            openSlider(IMAGES[16]);
+                        }}
+                    >
+                        <img src={IMAGES[16]} className={styles.image} />
+                    </button>
                 </div>
                 <div className={styles.imagesRowContainer}>
-                    <div className={styles.imageEighteenContainer}>
-                        <img
-                            src={'/Projects/SacredSpaces/14.jpg'}
-                            className={styles.image}
-                        />
-                    </div>
+                    <button
+                        className={`${styles.imageEighteenContainer} ${styles.imgButton}`}
+                        onClick={() => {
+                            openSlider(IMAGES[17]);
+                        }}
+                    >
+                        <img src={IMAGES[17]} className={styles.image} />
+                    </button>
                 </div>
                 <div className={styles.imagesRowContainer}>
-                    <div className={styles.imageNineteenContainer}>
-                        <img
-                            src={'/Projects/SacredSpaces/26.jpg'}
-                            className={styles.image}
-                        />
-                    </div>
+                    <button
+                        className={`${styles.imageNineteenContainer} ${styles.imgButton}`}
+                        onClick={() => {
+                            openSlider(IMAGES[18]);
+                        }}
+                    >
+                        <img src={IMAGES[18]} className={styles.image} />
+                    </button>
                 </div>
                 <div className={styles.imagesRowContainer}>
-                    <div className={styles.imageTwentyContainer}>
-                        <img
-                            src={'/Projects/SacredSpaces/02.jpg'}
-                            className={styles.image}
-                        />
-                    </div>
+                    <button
+                        className={`${styles.imageTwentyContainer} ${styles.imgButton}`}
+                        onClick={() => {
+                            openSlider(IMAGES[19]);
+                        }}
+                    >
+                        <img src={IMAGES[19]} className={styles.image} />
+                    </button>
                 </div>
                 <div className={styles.imagesRowContainer}>
-                    <div className={styles.imageTwentyOneContainer}>
-                        <img
-                            src={'/Projects/SacredSpaces/06.jpg'}
-                            className={styles.image}
-                        />
-                    </div>
+                    <button
+                        className={`${styles.imageTwentyOneContainer} ${styles.imgButton}`}
+                        onClick={() => {
+                            openSlider(IMAGES[20]);
+                        }}
+                    >
+                        <img src={IMAGES[20]} className={styles.image} />
+                    </button>
                 </div>
                 <div className={styles.imagesRowContainer}>
-                    <div className={styles.imageTwentyTwoContainer}>
-                        <img
-                            src={'/Projects/SacredSpaces/16.jpg'}
-                            className={styles.image}
-                        />
-                    </div>
+                    <button
+                        className={`${styles.imageTwentyTwoContainer} ${styles.imgButton}`}
+                        onClick={() => {
+                            openSlider(IMAGES[21]);
+                        }}
+                    >
+                        <img src={IMAGES[21]} className={styles.image} />
+                    </button>
                 </div>
                 <div className={styles.imagesRowContainer}>
-                    <div className={styles.imageTwentyThreeContainer}>
-                        <img
-                            src={'/Projects/SacredSpaces/19.jpg'}
-                            className={styles.image}
-                        />
-                    </div>
+                    <button
+                        className={`${styles.imageTwentyThreeContainer} ${styles.imgButton}`}
+                        onClick={() => {
+                            openSlider(IMAGES[22]);
+                        }}
+                    >
+                        <img src={IMAGES[22]} className={styles.image} />
+                    </button>
                 </div>
                 <div className={styles.imagesRowContainer}>
-                    <div className={styles.imageTwentyFourContainer}>
-                        <img
-                            src={'/Projects/SacredSpaces/21.jpg'}
-                            className={styles.image}
-                        />
-                    </div>
+                    <button
+                        className={`${styles.imageTwentyFourContainer} ${styles.imgButton}`}
+                        onClick={() => {
+                            openSlider(IMAGES[23]);
+                        }}
+                    >
+                        <img src={IMAGES[23]} className={styles.image} />
+                    </button>
                 </div>
                 <div className={styles.imagesRowContainer}>
-                    <div className={styles.imageTwentyFiveContainer}>
-                        <img
-                            src={'/Projects/SacredSpaces/07.jpg'}
-                            className={styles.image}
-                        />
-                    </div>
+                    <button
+                        className={`${styles.imageTwentyFourContainer} ${styles.imgButton}`}
+                        onClick={() => {
+                            openSlider(IMAGES[24]);
+                        }}
+                    >
+                        <img src={IMAGES[24]} className={styles.image} />
+                    </button>
                 </div>
             </div>
         </>
