@@ -13,8 +13,8 @@ export const Layout = () => {
                         <NavLink
                             to="/works"
                             onClick={() => {
-                                if (showManualSlider)
-                                    toggleManualSlider(!showManualSlider);
+                                // If the slider is open when the page is changed, close the slider so its not open on another project page:
+                                showManualSlider && toggleManualSlider(false);
                             }}
                         >
                             <button className={styles.navLinkButtonLeftTop}>

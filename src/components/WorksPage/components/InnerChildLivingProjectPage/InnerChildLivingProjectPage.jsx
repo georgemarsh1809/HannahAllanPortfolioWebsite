@@ -4,24 +4,24 @@ import { ManualSlider } from '../ManualSlider/ManualSlider';
 import { useStore } from '../../../../StateManagement/store';
 
 const IMAGES = [
-    '/Projects/InnerChildLiving/DSC01809.jpg',
-    '/Projects/InnerChildLiving/DSC01911.jpg',
-    '/Projects/InnerChildLiving/DSC02002.jpg',
-    '/Projects/InnerChildLiving/DSC01963.jpg',
-    '/Projects/InnerChildLiving/DSC02037.jpg',
-    '/Projects/InnerChildLiving/DSC01849.jpg',
-    '/Projects/InnerChildLiving/DSC01958.jpg',
-    '/Projects/InnerChildLiving/DSC01928.jpg',
-    '/Projects/InnerChildLiving/DSC02048.jpg',
-    '/Projects/InnerChildLiving/DSC02057.jpg',
-    '/Projects/InnerChildLiving/DSC02000.jpg',
-    '/Projects/InnerChildLiving/DSC02014.jpg',
-    '/Projects/InnerChildLiving/DSC02087.jpg',
-    '/Projects/InnerChildLiving/DSC01865.jpg',
-    '/Projects/InnerChildLiving/DSC01958.jpg',
-    '/Projects/InnerChildLiving/DSC02019.jpg',
-    '/Projects/InnerChildLiving/DSC02121.jpg',
-    '/Projects/InnerChildLiving/DSC02128.jpg',
+    '/Projects/InnerChildLiving/DSC01809.webp',
+    '/Projects/InnerChildLiving/DSC01911.webp',
+    '/Projects/InnerChildLiving/DSC02002.webp',
+    '/Projects/InnerChildLiving/DSC01963.webp',
+    '/Projects/InnerChildLiving/DSC02037.webp',
+    '/Projects/InnerChildLiving/DSC01849.webp',
+    '/Projects/InnerChildLiving/DSC01958.webp',
+    '/Projects/InnerChildLiving/DSC01928.webp',
+    '/Projects/InnerChildLiving/DSC02048.webp',
+    '/Projects/InnerChildLiving/DSC02057.webp',
+    '/Projects/InnerChildLiving/DSC02000.webp',
+    '/Projects/InnerChildLiving/DSC02014.webp',
+    '/Projects/InnerChildLiving/DSC02087.webp',
+    '/Projects/InnerChildLiving/DSC01865.webp',
+    '/Projects/InnerChildLiving/DSC01958.webp',
+    '/Projects/InnerChildLiving/DSC02019.webp',
+    '/Projects/InnerChildLiving/DSC02121.webp',
+    '/Projects/InnerChildLiving/DSC02128.webp',
 ];
 
 export const InnerChildLivingProjectPage = () => {
@@ -104,7 +104,11 @@ export const InnerChildLivingProjectPage = () => {
                             openSlider(IMAGES[0]);
                         }}
                     >
-                        <img src={IMAGES[0]} className={styles.image} />
+                        <img
+                            src={IMAGES[0]}
+                            className={styles.image}
+                            loading="lazy"
+                        />
                     </button>
                 </div>
                 <div className={styles.imagesRowContainer}>
@@ -114,7 +118,11 @@ export const InnerChildLivingProjectPage = () => {
                             openSlider(IMAGES[1]);
                         }}
                     >
-                        <img src={IMAGES[1]} className={styles.image} />
+                        <img
+                            src={IMAGES[1]}
+                            className={styles.image}
+                            loading="lazy"
+                        />
                     </button>
                 </div>
                 <div className={styles.imagesRowContainer}>
@@ -124,7 +132,11 @@ export const InnerChildLivingProjectPage = () => {
                             openSlider(IMAGES[2]);
                         }}
                     >
-                        <img src={IMAGES[2]} className={styles.image} />
+                        <img
+                            src={IMAGES[2]}
+                            className={styles.image}
+                            loading="lazy"
+                        />
                     </button>
                 </div>
                 <div className={styles.imagesRowContainer}>
@@ -134,7 +146,11 @@ export const InnerChildLivingProjectPage = () => {
                             openSlider(IMAGES[3]);
                         }}
                     >
-                        <img src={IMAGES[3]} className={styles.image} />
+                        <img
+                            src={IMAGES[3]}
+                            className={styles.image}
+                            loading="lazy"
+                        />
                     </button>
                 </div>
                 <div className={styles.imagesRowContainer}>
@@ -144,7 +160,11 @@ export const InnerChildLivingProjectPage = () => {
                             openSlider(IMAGES[4]);
                         }}
                     >
-                        <img src={IMAGES[4]} className={styles.image} />
+                        <img
+                            src={IMAGES[4]}
+                            className={styles.image}
+                            loading="lazy"
+                        />
                     </button>
                 </div>
                 <div className={styles.imagesRowContainer}>
@@ -154,7 +174,11 @@ export const InnerChildLivingProjectPage = () => {
                             openSlider(IMAGES[5]);
                         }}
                     >
-                        <img src={IMAGES[5]} className={styles.image} />
+                        <img
+                            src={IMAGES[5]}
+                            className={styles.image}
+                            loading="lazy"
+                        />
                     </button>
                 </div>
                 <div className={styles.imagesRowContainer}>
@@ -164,7 +188,11 @@ export const InnerChildLivingProjectPage = () => {
                             openSlider(IMAGES[6]);
                         }}
                     >
-                        <img src={IMAGES[6]} className={styles.image} />
+                        <img
+                            src={IMAGES[6]}
+                            className={styles.image}
+                            loading="lazy"
+                        />
                     </button>
                 </div>
                 <div className={styles.imagesRowContainer}>
@@ -174,7 +202,11 @@ export const InnerChildLivingProjectPage = () => {
                             openSlider(IMAGES[7]);
                         }}
                     >
-                        <img src={IMAGES[7]} className={styles.image} />
+                        <img
+                            src={IMAGES[7]}
+                            className={styles.image}
+                            loading="lazy"
+                        />
                     </button>
                 </div>
                 <div className={styles.imagesRowContainer}>
@@ -184,7 +216,11 @@ export const InnerChildLivingProjectPage = () => {
                             openSlider(IMAGES[8]);
                         }}
                     >
-                        <img src={IMAGES[8]} className={styles.image} />
+                        <img
+                            src={IMAGES[8]}
+                            className={styles.image}
+                            loading="lazy"
+                        />
                     </button>
                     <button
                         className={`${styles.imageTenContainer} ${styles.imgButton}`}
@@ -192,7 +228,11 @@ export const InnerChildLivingProjectPage = () => {
                             openSlider(IMAGES[9]);
                         }}
                     >
-                        <img src={IMAGES[9]} className={styles.image} />
+                        <img
+                            src={IMAGES[9]}
+                            className={styles.image}
+                            loading="lazy"
+                        />
                     </button>
                 </div>
                 <div className={styles.imagesRowContainer}>
@@ -202,7 +242,11 @@ export const InnerChildLivingProjectPage = () => {
                             openSlider(IMAGES[10]);
                         }}
                     >
-                        <img src={IMAGES[10]} className={styles.image} />
+                        <img
+                            src={IMAGES[10]}
+                            className={styles.image}
+                            loading="lazy"
+                        />
                     </button>
                     <button
                         className={`${styles.imageTwelveContainer} ${styles.imgButton}`}
@@ -210,7 +254,11 @@ export const InnerChildLivingProjectPage = () => {
                             openSlider(IMAGES[11]);
                         }}
                     >
-                        <img src={IMAGES[11]} className={styles.image} />
+                        <img
+                            src={IMAGES[11]}
+                            className={styles.image}
+                            loading="lazy"
+                        />
                     </button>
                 </div>
                 <div className={styles.imagesRowContainer}>
@@ -220,7 +268,11 @@ export const InnerChildLivingProjectPage = () => {
                             openSlider(IMAGES[12]);
                         }}
                     >
-                        <img src={IMAGES[12]} className={styles.image} />
+                        <img
+                            src={IMAGES[12]}
+                            className={styles.image}
+                            loading="lazy"
+                        />
                     </button>
                 </div>
                 <div className={styles.imagesRowContainer}>
@@ -230,7 +282,11 @@ export const InnerChildLivingProjectPage = () => {
                             openSlider(IMAGES[13]);
                         }}
                     >
-                        <img src={IMAGES[13]} className={styles.image} />
+                        <img
+                            src={IMAGES[13]}
+                            className={styles.image}
+                            loading="lazy"
+                        />
                     </button>
                     <button
                         className={`${styles.imageFifteenContainer} ${styles.imgButton}`}
@@ -238,7 +294,11 @@ export const InnerChildLivingProjectPage = () => {
                             openSlider(IMAGES[14]);
                         }}
                     >
-                        <img src={IMAGES[14]} className={styles.image} />
+                        <img
+                            src={IMAGES[14]}
+                            className={styles.image}
+                            loading="lazy"
+                        />
                     </button>
                 </div>
                 <div className={styles.imagesRowContainer}>
@@ -248,7 +308,11 @@ export const InnerChildLivingProjectPage = () => {
                             openSlider(IMAGES[15]);
                         }}
                     >
-                        <img src={IMAGES[15]} className={styles.image} />
+                        <img
+                            src={IMAGES[15]}
+                            className={styles.image}
+                            loading="lazy"
+                        />
                     </button>
                 </div>
                 <div className={styles.imagesRowContainer}>
@@ -258,7 +322,11 @@ export const InnerChildLivingProjectPage = () => {
                             openSlider(IMAGES[16]);
                         }}
                     >
-                        <img src={IMAGES[16]} className={styles.image} />
+                        <img
+                            src={IMAGES[16]}
+                            className={styles.image}
+                            loading="lazy"
+                        />
                     </button>
                     <button
                         className={`${styles.imageEighteenContainer} ${styles.imgButton}`}
@@ -266,7 +334,11 @@ export const InnerChildLivingProjectPage = () => {
                             openSlider(IMAGES[17]);
                         }}
                     >
-                        <img src={IMAGES[17]} className={styles.image} />
+                        <img
+                            src={IMAGES[17]}
+                            className={styles.image}
+                            loading="lazy"
+                        />
                     </button>
                 </div>
             </div>
