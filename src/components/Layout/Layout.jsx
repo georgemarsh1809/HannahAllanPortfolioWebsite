@@ -21,9 +21,11 @@ export const Layout = () => {
                                 <p>Works</p>
                             </button>
                         </NavLink>
-                        <a href="/">
-                            <h1 className={styles.headerTitle}>Hannah Allan</h1>
-                        </a>
+                        <div className={styles.headerTitle}>
+                            <a href="/">
+                                <h1>Hannah Allan</h1>
+                            </a>
+                        </div>
                         <NavLink
                             to="/about"
                             onClick={() => {

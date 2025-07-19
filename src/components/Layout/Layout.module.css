@@ -6,55 +6,50 @@ header {
     min-width: 100vw;
     width: 100vw;
     z-index: 10;
-    h1 {
-        font-size: 4.5em;
-    }
+}
+
+a {
+    color: black;
+}
+
+.nav-link-button-left-top,
+.nav-link-button-left-bottom,
+.nav-link-button-right-top,
+.nav-link-button-right-bottom {
+    display: flex;
+    font-family: 'Josefin Sans';
+    border: none;
+    background: none;
+    font-weight: 300;
+}
+
+.nav-link-button-left-top p,
+.nav-link-button-left-bottom p,
+.nav-link-button-right-top p,
+.nav-link-button-right-bottom p {
+    font-size: clamp(1.2rem, 3vw, 1.5rem);
 }
 
 .nav-link-button-left-top {
-    display: flex;
-    font-family: 'Josefin Sans';
-    font-size: 22px;
     writing-mode: sideways-lr;
-    font-weight: 300;
-    border: none;
-    background: none;
     padding-bottom: 45px;
     padding-top: 60px;
 }
 
 .nav-link-button-left-bottom {
-    display: flex;
-    font-family: 'Josefin Sans';
-    font-size: 22px;
     writing-mode: sideways-lr;
-    font-weight: 300;
-    border: none;
-    background: none;
     padding-bottom: 60px;
     padding-top: 10px;
 }
 
 .nav-link-button-right-top {
-    display: flex;
-    font-family: 'Josefin Sans';
     writing-mode: sideways-rl;
-    font-weight: 300;
-    font-size: 22px;
-    border: none;
-    background: none;
     padding-bottom: 45px;
     padding-top: 60px;
 }
 
 .nav-link-button-right-bottom {
-    display: flex;
-    font-family: 'Josefin Sans';
     writing-mode: sideways-rl;
-    font-weight: 300;
-    font-size: 22px;
-    border: none;
-    background: none;
     padding-bottom: 40px;
     padding-top: 10px;
 }
@@ -94,12 +89,13 @@ header {
 
 .header-title {
     display: flex;
+    top: 0;
     align-items: center;
     font-family: 'Abril Fatface';
     color: #1b1212;
-    /* font-size: 4.5em; */
     font-weight: 600;
-    padding: 3rem;
+    /* background-color: red; */
+    font-size: clamp(1rem, 5vw, 3rem);
 }
 
 .footer-container {

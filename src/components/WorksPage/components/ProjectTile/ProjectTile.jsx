@@ -8,7 +8,7 @@ export function ProjectTile(props) {
         project === 'TenthPlanet'
             ? '/Projects/10thPlanet/10thplanet2025-0013.jpg'
             : project === 'InnerChildLiving'
-            ? '/Projects/InnerChildLiving/DSC01865.jpg'
+            ? '/Projects/InnerChildLiving/DSC01865.webp'
             : project === 'MonsoonFN'
             ? '/Projects/Monsoon Gym Fight Night/016.jpg'
             : project === 'SacredSpaces'
